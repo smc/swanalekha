@@ -55,9 +55,9 @@ h2 {
 }
 
 h3 {
-    color: #555;
     font-size: 1.25em;
-    margin: 0 0 .5em
+    margin: .5em 0;
+    text-align: left;
 }
 
 p {
@@ -95,7 +95,7 @@ p {
     display: inline-block;
     margin: 0 0 0 1.5em;
     padding: 0;
-    vertical-align: top
+    vertical-align: top;
 }
 
 .inline-block-list li:first-child {
@@ -104,15 +104,15 @@ p {
 
 .clearfix:after, .clearfix:before {
     content: ' ';
-    display: table
+    display: table;
 }
 
 .clearfix:after {
-    clear: both
+    clear: both;
 }
 
 .clearfix {
-    *zoom: 1
+    *zoom: 1;
 }
 
 .container {
@@ -263,28 +263,28 @@ p {
     line-height: 1.4em;
 }
 
-.site-section-video {
+.site-section-dark {
     background-color: transparent;
     color: #fff;
     text-align: center;
     padding: 2em 0 3em
 }
 
-.site-section-video .content {
+.site-section-dark.content {
     max-width: 720px;
     margin: auto;
     padding: 10px
 }
 
-.site-footer a, .site-section-video .content a {
+.site-footer a, .site-section-dark.content a {
     color: #ffa000
 }
 
-.site-section-video .content .new {
+.site-section-dark.content .new {
     text-align: left
 }
 
-.site-section-video h2 {
+.site-section-darkh2 {
     margin: 1em 0
 }
 
@@ -299,6 +299,10 @@ p {
     padding: 2em
 }
 
+.features{
+    text-align: left;
+}
+
 textarea {
     width: 100%;
     height: 20em;
@@ -308,12 +312,18 @@ textarea {
 }
 
 pre {
-        font-family: monospace;
-        border: 1px dotted #333;
-        padding: 10px;
-        text-align: left;
-        background-color: #eee;
+    font-family: monospace;
+    border: 1px dotted #333;
+    padding: 10px;
+    text-align: left;
 }
+
+td {
+    border-bottom: 1px solid #fff;
+    padding: 8px;
+    text-align: left;
+}
+
 @media only screen and (max-width:800px) {
     .site-logo, .site-nav {
         float: none
@@ -385,7 +395,7 @@ pre {
         padding: 0;
         margin: 2em 1em
     }
-    .site-section-video {
+    .site-section-dark{
         display: none
     }
     h2, h3, p {

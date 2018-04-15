@@ -13,23 +13,26 @@
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <div class="site-header clearfix" role="banner">
             <div class="site-logo">സ്വനലേഖ</div>
             <ul class="site-nav inline-block-list">
-                <li>
-                    <a href="https://github.com/h5bp/html5-boilerplate" data-ga-category="Outbound links" data-ga-action="Nav click" data-ga-label="Source code">Source code</a>
+                 <li>
+                    <a href="#doc">Docs</a>
                 </li>
                 <li>
-                    <a href="#doc" data-ga-category="Outbound links " data-ga-action="Nav click" data-ga-label=Docs>Docs</a>
+                    <a href="#web">Try it</a>
                 </li>
                 <li>
-                    <a href="#web" data-ga-category="Outbound links " data-ga-action="Nav click" data-ga-label=Docs>Try it</a>
+                    <a href="#faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="#disqus_thread">Ask</a>
                 </li>
             </ul>
         </div>
         <div class=site-promo>
-            <h1>Malayalam Input method</h1>
+            <h1>Swanalekha Malayalam Input Method</h1>
             <p class=description>Swanalekha helps you to input Malayalam in Linux, mobile and web. The transliteration based input method is very
                 easy to learn and master.
             </p>
@@ -40,7 +43,7 @@
 
             </div>
             <div class=cta-option>
-                <a class="btn btn-download" href="#andoid">
+                <a class="btn btn-download" href="#android">
                     <strong>Mobile</strong>
                     <span class=version>Android</span>
                 </a>
@@ -54,70 +57,245 @@
 
             </div>
         </div>
-    </div>
-    <div class="site-section">
+    </section>
+    <section class="site-section">
         <div class=container>
             <h2>Save time. Learn with confidence.</h2>
             <div class="grid">
                 <div class="grid-cell">
-                    <h3>
-                        <span class=star>&#x2605;</span> Analytics, icons, and more</h3>
-                    <p>A lean, mobile-friendly HTML template; optimized Google Analytics snippet; placeholder touch-device icon;
-                        and docs covering dozens of extra tips and tricks.</div>
+                    <h3>Familiar manglish for easy start</h3>
+                    <p>To start using Swanalekha you don't need to learn any key mapping. Start with the common manglish you
+                        usually use.</div>
                 <div class="grid-cell">
-                    <h3>
-                        <span class=star>&#x2605;</span> Normalize.css and helpers</h3>
-                    <p>Includes
-                        <a href="https://necolas.github.io/normalize.css" />Normalize.css</a> &mdash; a modern, HTML5-ready alternative to CSS resets &mdash; and further base
-                        styles, helpers, media queries, and print styles.</div>
+                    <h3>Automatic letter suggestions</h3>
+                    <p>As you type, suggestions matching your keys is displayes just below your cursor. You can choose one of
+                        them or just continue typing with default. Once you practice and learn the input method, you may
+                        not need suggestions. You can just disable it</div>
                 <div class="grid-cell">
-                    <h3>
-                        <span class=star>&#x2605;</span> jQuery and Modernizr</h3>
-                    <p>Get the latest minified versions of two best-of-breed libraries:
-                        <a href=https://jquery.org/>jQuery</a> (via jQuery&#8217;s CDN, with local fallback) and a custom build of the
-                        <a href=https://modernizr.com/>Modernizr</a> feature detection library.</div>
+                    <h3>Available in mobile</h3>
+                    <p>With the SMC's Indic keyboard, the same input method is available in your android mobile. You don't need
+                        to learn another input method for mobile.</div>
                 <div class="grid-cell">
-                    <h3>
-                        <span class=star>&#x2605;</span> High performance</h3>
-                    <p>Apache settings to help you deliver excellent site performance. We independently maintain >server configs
-                        for multiple platforms.</div>
+                    <h3>Type anywhere in your desktop. No copy pasting</h3>
+                    <p>Be it your favorite text editor, browser or office application, just type whereever you want.</div>
             </div>
         </div>
-    </div>
-    <div class="site-section site-section-video " id="linux">
-        <h2>Installing Swanalekha in Linux</h2>
-        <div class=content>
-            <p class=new>What's new? Plenty. It's taken us a while to get a new version out the door, but we've been busy, so we hope
-                you'll find it's worth the wait. Here are some highlights:
-                <ul class=new>
-                    <li>After much discussion we're now fetching jQuery from jQuery's CDN instead of Google's.
-                        <li>After even more discussion we dropped IE8 support ✌️ We're now tracking to the latest Normalize and
-                            jQuery.
-                            <li>We updated Modernizr to v3 and added a sample Modernizr configuration file so you can create
-                                your own custom build.
-                                <li>We added a sample web app manifest file to the project to help you properly format your site
-                                    or app to save to a device's home screen.
-                                    <li>That's just the tip of the iceberg. This update includes well over 100 commits from more
-                                        than 45 developers.
-                                        <a href=https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md>Check out the Changelog for all the fun.</a>
+    </section>
+    <section class="site-section site-section-dark" id="linux">
+        <div class="container">
+            <h2>Installing Swanalekha in Linux</h2>
+            <div class=content>
+                <p class=new>Swanalekha is available in all major GNU/Linux distributions like Ubuntu, Debian, Fedora etc. To install
+                    and configure Swanalekha, please follow the below instructions. It is assumes that you are not using
+                    very old versions of these distributions.</p>
+                <h3>Ubuntu 18.04</h3>
+                <p>Ubuntu 18.04 comes with preinstalled Malayalam input methods and fonts. You don't need to install anything
+                    additional. This video shows picking the right input method and font. </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hlkty9s5t30" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3>Ubuntu 17.10 and older, Debian</h3>
+                <ul class="features">
+                    <li>Use your package manager to search and install the following packages:
+                        <pre>ibus ibus-m17n ibus-gtk3 m17n-contrib</pre>. Alternatively, if you are comfortable using linux terminal, you may install them using the following
+                        command:
+                        <pre>sudo apt install ibus ibus-m17n ibus-gtk3 m17n-contrib</pre> </li>
+                    <li>Once the above packages are installed, you need to select Swanalekha as input method to your input method
+                        settings. A video illustrating how to do this is given below.
+
+                    </li>
+                    <li>Once configured, you can open any text editor and choose Swanalekha as input method and start typing
+                        in Malayalam</li>
                 </ul>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aBF2kyXB8v8" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+
+                <h3>Disable the suggestions</h3>
+                <p class="new">Once you learned all key combinations, the suggestions under your cursor may not be interesting. You can
+                    switch of that.</p>
+                <p class="new">There is a new version of swanalekha which is not yet available in operating systems by default, but can
+                    be installed. This version does not have the suggestions list by default. Only the list under cursor
+                    is disabled, you can still use up/down arrows to choose the options.</p>
+                <ul class=features>
+                    <li>Open the terminal. In Ubuntu, you can do that by Alt+F1, search Terminal.</li>
+                    <li>Run this command to get the new version of swanalekha:
+                        <pre>wget http://swanalekha.smc.org.in/m17n/ml-swanalekha.mim</pre>
+                    </li>
+                    <li>Install it using the following command
+                        <pre>sudo cp ml-swanalekha.mim /usr/share/m17n/ml-swanalekha.mim</pre>
+                    </li>
+                    <li>Either logout and login or restart the input method system by the following command
+                        <pre>ibus-daemon -rdx</pre>
+                    </li>
+                </ul>
+                <img src="img/update-swanalekha.jpg" />
+                <p>Whether the suggestions should be shown or not is an option, you may change that using m17n-im-config command.You
+                    may need to install m17n-im-config package for this.</p>
+                <img src="img/swanalekha-config.jpg" />
+            </div>
         </div>
-        <div class="cta-option ">
-            <a class="btn btn-alt " href="https://www.youtube.com/watch?v=WkLO-q2wC80&amp;index=2&amp;list=PLdWHXDIdpitG0Ttvat9G5wJoqaU9cQvHh
-                        " data-ga-category="Outbound links " data-ga-action="Watch video " data-ga-label="Video playlist ">Watch older release videos!</a>
-        </div>
-    </div>
-    <div class="site-section " id="web">
-        <div class="container ">
-            <p class="instruction ">Press
+    </section>
+    <section class="site-section" id="android">
+        <div class="container">
+            <h2>Installing Swanalekha in Android device</h2>
+            <div class=content>
+                <p class=new>
+                    <a href="https://play.google.com/store/apps/details?id=org.smc.inputmethod.indic">The Indic keyboard</a> by SMC provides swanalekha in your android device. Install it from google playstore
+                    and configure to enable Swanalekha for Malayalam.</p>
+                <ul class="features">
+                    <li>Indic Keyboard is a versatile keyboard for Android users who wish to use Indic and Indian languages to
+                        type messages, compose emails and generally prefer to use them in addition to English on their phone.
+                        You can use this application to type anywhere in your phone that you would normally type in English.
+                    </li>
+                    <li>Learns the common words you use and provides suggestions.</li>
+                    <li>Provides compact, convenient keyboard layouts for the casual users as well as the language lovers.</li>
+                    <li>Fully integrates with native Android look and feel</li>
+                    <li>Free and Open Source - Made for the people, by the people. YOU can make it better.</li>
+                </ul>
+                <div class="cta-option ">
+                    <a class="btn btn-download" href="https://play.google.com/store/apps/details?id=org.smc.inputmethod.indic">
+                        <strong>Download Indic Keyboard</strong>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section class="site-section site-section-dark" id="doc">
+        <div class="container">
+            <h2>Swanalekha keymappings</h2>
+            <div class=content>
+                <p>Refer the below table for the English letters to type to get Malayalam</p>
+                <img src="img/swanalekha.png" />
+                <p>To understand this table better, some examples are given below</p>
+                <table>
+                    <tr>
+                        <td> മലയാളം എന്റെ മാതൃഭാഷ </td>
+                        <td>malayaaLaM ente maathRbhaasha അല്ലെങ്കില്‍ malayAlam~ ente mAthRBAsha അല്ലെങ്കില്‍ malayaaLam_ ente
+                            mAthRBAsha
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>സരിഗമപധനി </td>
+                        <td>sarigamapadhani</td>
+                    </tr>
+
+                    <tr>
+                        <td>പൊൻപീലി</td>
+                        <td> pon~piili അല്ലെങ്കില്‍ pon_pIli അല്ലെങ്കില്‍ pon~peeli</td>
+                    </tr>
+
+                    <tr>
+                        <td>ധ്വനി</td>
+                        <td> dhvani അല്ലെങ്കില്‍ dhwani</td>
+                    </tr>
+
+                    <tr>
+                        <td>വെണ്ണയുണ്ടെങ്കില്‍ നറുനെയ് വേറിട്ടു കരുതേണമോ </td>
+                        <td>veNNayuNtenkil~ naRuney vERitt karuthENamO</td>
+                    </tr>
+
+                    <tr>
+                        <td>വിദ്യാധനം സര്‍വ്വധനാല്‍ പ്രധാനം</td>
+                        <td> vidyaadhanam~ sar~vvadhanaal~ pradhaanam~</td>
+                    </tr>
+
+                    <tr>
+                        <td>അരവിന്ദിന്റെ അച്ഛന്‍ </td>
+                        <td>aravindinte achChan~</td>
+                    </tr>
+
+                    <tr>
+                        <td>ഇന്ത്യ എന്റെ രാജ്യം </td>
+                        <td>inthya ente raajyam~</td>
+                    </tr>
+
+                    <tr>
+                        <td>അവന്‍ മുറ്റത്ത് ഉലാത്തി </td>
+                        <td>avan~ muTTathth ulaaththi</td>
+                    </tr>
+
+                    <tr>
+                        <td>മകം പിറന്ന മങ്ക </td>
+                        <td>makam~ piRanna manka</td>
+                    </tr>
+
+                    <tr>
+                        <td>പ്രകൃതി കുസൃതി കാണിച്ചു </td>
+                        <td>prakRthi kusRthi kaaNichchu</td>
+                    </tr>
+
+                    <tr>
+                        <td>പാലക്കാടന്‍കാറ്റ് പനകളെ തഴുകിയുണര്‍ത്തി </td>
+                        <td>paalakkaatan​~kaaTT pankaLe thazhukiyuNar~ththi അല്ലെങ്കില്‍ pAlakkAtan~kATT pankaLe thazhukiyuNaR~ththi</td>
+                    </tr>
+
+                    <tr>
+                        <td>നിളയില്‍ കുഞ്ഞോളങ്ങള്‍ ചാഞ്ചാടി </td>
+                        <td>niLayil~ kunjnjOLangngaL~ chaanchaati
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>പഞ്ചസാര മണല്‍ത്തരികള്‍ വെട്ടിത്തിളങ്ങി</td>
+                        <td> panchasaara maNal~ththarikaL~ vettiththiLangngi</td>
+                    </tr>
+
+                    <tr>
+                        <td>ദൈവത്തിന്റെ വികൃതികള്‍</td>
+                        <td> daivaththinte vikRthikaL~</td>
+                    </tr>
+
+                    <tr>
+                        <td>അക്ഷരം</td>
+                        <td> axaraM</td>
+                    </tr>
+
+                    <tr>
+                        <td>പ്രത്യേ​കം ശ്രദ്ധിക്കുക </td>
+                        <td>prathy​​Ekam~ Sraddhikkuka</td>
+                    </tr>
+
+                    <tr>
+                        <td>സമ്പ്രദായം </td>
+                        <td>sampradaayam~</td>
+                    </tr>
+
+                    <tr>
+                        <td>അഞ്ജനമിട്ട സന്ധ്യ </td>
+                        <td>anjjanamitta sandhya</td>
+                    </tr>
+
+                    <tr>
+                        <td>ജ്ഞാനപ്പാന </td>
+                        <td>jnjaanappaana</td>
+                    </tr>
+
+                    <tr>
+                        <td>ീ എന്നത് ഈ എന്ന സ്വരത്തിന്റെ ചിഹ്നമാണ് </td>
+                        <td> @ee ennath ee enna swarathinte chihnamaaN
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ക്യൂ പാലിക്കുക</td>
+                        <td> Q paalikkuka</td>
+                    </tr>
+                    <tr>
+                        <td>വൈകുന്നേരത്ത്</td>
+                        <td> YkunErathth അല്ലെങ്കില്‍ vaikunnErathth
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <section class="site-section" id="web">
+        <div class="container">
+            <p class="instruction">Press
                 <strong>control+m</strong> to enable and disable swanalekha.</p>
-            <textarea id="tryit "></textarea>
+            <textarea id="tryit"></textarea>
 
             <h2>Usage</h2>
-            <div class="content ">
+            <div class="content">
                 <p>
                     To use this transliteration scheme in your webpage, include the following line your html pages.</p>
-                <pre>&lt;script src="https://swanalekha.smc.org.in/js/swanalekha-ml.js "&gt;&lt;/script&gt;</pre>
+                <pre>&lt;script src="https://swanalekha.smc.org.in/js/swanalekha-ml.js"&gt;&lt;/script&gt;</pre>
                 <p>Then bind swanalekha to textareas and input fields. Example:</p>
                 <pre>swanalekha( document.getElementById( 'id-of-input-field' ) );</pre>
                 <p>By default, the swanalekha input method is not enabled. It is enabled when users press control+m in the input
@@ -131,36 +309,89 @@
                 is enabled.</p>
             <pre>.swanalekha { border-left: 3px solid #cc0000; }</pre>
         </div>
-    </div>
-    <div class=aside>
+    </section>
+    <section class="site-section site-section-dark" id="faq">
+        <div class="container">
+            <h2>Frequently asked Question</h2>
+            <div class=content>
+                <p class=new>
+                    <ol class="features">
+                        <li>
+                            <strong>How do I type vowel signs?</strong>
+                            <p>Start with @ symbol. For example @aa = ാ, @i = ി @ii = ീ @u = ു @R= ൃ </p>
+                        </li>
+                        </li>
+                        <li>
+                            <strong>How do I type visarga and ദുഃഖം?</strong>
+                            <p>Visaraga - @aH = ഃ. ദുഃഖം = du3kham2 or du@aHkham2 </p>
+                        </li>
+                        </li>
+                        <li>
+                            <strong>How do I type rupee symbol?</strong>
+                            <p>₹ = roo2 or second option from ruu</p>
+                        </li>
+                        <li>
+                            <strong>How do I type dot reph symbol?</strong>
+                            <p>ൎ = r#</p>
+                        </li>
+                        <li>
+                            <strong>How do I type old au sign?</strong>
+                            <p>kau = ൗ, kou =കൌ </p>
+                        </li>
+                        <li>
+                            <strong>How do I type Malayalam numerals?</strong>
+                            <p>You cannot. We might add it soon.</p>
+                        </li>
+                        <li>
+                            <strong>How do I type ZWNJ?</strong>
+                            <p>Use underscore.</p>
+                        </li>
+                        </li>
+                    </ol>
+            </div>
+    </section>
+    <section id="disqus_thread" class="site-section"></section>
+    <script>
+
+        var disqus_config = function () {
+            this.page.url = 'http://swanalekha.smc.org.in';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'swanalekha-smc-org-in'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://swanalekha.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <section class=aside>
         <div class=container>
             <ul class=inline-block-list>
                 <li>
-                    <a href=https://gitlab.com/smc/swanalekha/issues data-ga-category="Outbound links
-                        " data-ga-action="Footer click " data-ga-label="Report issues ">
-                        <span class="Icon Icon--gitlab "></span> Report issues</a>
+                    <a href="https://gitlab.com/smc/swanalekha/issues">Report issues</a>
                 </li>
                 <li>
-                    <a href=https://gitlab.com/smc/swanalekha " data-ga-category="Outbound links " data-ga-action="Footer click "
-                        data-ga-label="Report issues ">
-                        <span class="Icon Icon--gitlab
-                        "></span>Source code</a>
+                    <a href="https://gitlab.com/smc/swanalekha">Source code</a>
                 </li>
             </ul>
         </div>
-    </div>
-    <div class=site-footer role=contentinfo>
-        <p>
-            <a class=twitter-share-button href=https://twitter.com/share data-count=none data-lang=en data-via=h5bp data-size=large data-text="HTML5 Boilerplate: The rock-solid professional front-end template "
-                data-url=https://html5boilerplate.com/>Tweet</a>
-            &nbsp;
-            <a class=twitter-follow-button href=https://twitter.com/h5bp data-show-count=false data-lang=en data-size=large>Follow @smcproject</a>
-            <p>A project from
-                <a href="https://smc.org.in ">SMC</a> maintained by
-                <br>
-                <a href="https://thottingal.in " />Santhosh Thottingal</a>
 
-    </div>
+    </section>
+    <section class="site-footer" role="contentinfo">
+        <p>
+            Tweet &nbsp;
+            <a class=twitter-follow-button href="https://twitter.com/smcproject">Follow @smcproject</a>
+            <p>A project from
+                <a href="https://smc.org.in">SMC</a> maintained by
+                <br>
+                <a href="https://thottingal.in" />Santhosh Thottingal</a>
+
+    </section>
+    <script id="dsq-count-scr" src="//swanalekha.disqus.com/count.js" async></script>
     <script src="js/swanalekha-ml.js "></script>
     <script>
         window.onload = function () {
