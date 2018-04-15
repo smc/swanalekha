@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-us">
+<meta charset="utf-8">
+
+<head>
+    <title>Swanalekha Malayalam Input method</title>
+    <meta name="description" content="Swanalekha Malayalam Input method">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" href=icon.png>
+    <link rel="stylesheet" href="https://smc.org.in/fonts/css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swanalekha.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="site-header clearfix" role="banner">
+            <div class="site-logo">സ്വനലേഖ</div>
+            <ul class="site-nav inline-block-list">
+                <li>
+                    <a href="https://github.com/h5bp/html5-boilerplate" data-ga-category="Outbound links" data-ga-action="Nav click" data-ga-label="Source code">Source code</a>
+                </li>
+                <li>
+                    <a href="#doc" data-ga-category="Outbound links " data-ga-action="Nav click" data-ga-label=Docs>Docs</a>
+                </li>
+                <li>
+                    <a href="#web" data-ga-category="Outbound links " data-ga-action="Nav click" data-ga-label=Docs>Try it</a>
+                </li>
+            </ul>
+        </div>
+        <div class=site-promo>
+            <h1>Malayalam Input method</h1>
+            <p class=description>Swanalekha helps you to input Malayalam in Linux, mobile and web. The transliteration based input method is very
+                easy to learn and master.
+            </p>
+            <div class=cta-option>
+                <a class="btn btn-download " href="#linux">
+                    <strong>GNU/Linux</strong>
+                </a>
+
+            </div>
+            <div class=cta-option>
+                <a class="btn btn-download" href="#andoid">
+                    <strong>Mobile</strong>
+                    <span class=version>Android</span>
+                </a>
+
+            </div>
+            <div class="cta-option ">
+                <a class="btn btn-download" href="#web">
+                    <strong>Web </strong>
+                    <span class=version>Javascript</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="site-section">
+        <div class=container>
+            <h2>Save time. Learn with confidence.</h2>
+            <div class="grid">
+                <div class="grid-cell">
+                    <h3>
+                        <span class=star>&#x2605;</span> Analytics, icons, and more</h3>
+                    <p>A lean, mobile-friendly HTML template; optimized Google Analytics snippet; placeholder touch-device icon;
+                        and docs covering dozens of extra tips and tricks.</div>
+                <div class="grid-cell">
+                    <h3>
+                        <span class=star>&#x2605;</span> Normalize.css and helpers</h3>
+                    <p>Includes
+                        <a href="https://necolas.github.io/normalize.css" />Normalize.css</a> &mdash; a modern, HTML5-ready alternative to CSS resets &mdash; and further base
+                        styles, helpers, media queries, and print styles.</div>
+                <div class="grid-cell">
+                    <h3>
+                        <span class=star>&#x2605;</span> jQuery and Modernizr</h3>
+                    <p>Get the latest minified versions of two best-of-breed libraries:
+                        <a href=https://jquery.org/>jQuery</a> (via jQuery&#8217;s CDN, with local fallback) and a custom build of the
+                        <a href=https://modernizr.com/>Modernizr</a> feature detection library.</div>
+                <div class="grid-cell">
+                    <h3>
+                        <span class=star>&#x2605;</span> High performance</h3>
+                    <p>Apache settings to help you deliver excellent site performance. We independently maintain >server configs
+                        for multiple platforms.</div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section site-section-video " id="linux">
+        <h2>Installing Swanalekha in Linux</h2>
+        <div class=content>
+            <p class=new>What's new? Plenty. It's taken us a while to get a new version out the door, but we've been busy, so we hope
+                you'll find it's worth the wait. Here are some highlights:
+                <ul class=new>
+                    <li>After much discussion we're now fetching jQuery from jQuery's CDN instead of Google's.
+                        <li>After even more discussion we dropped IE8 support ✌️ We're now tracking to the latest Normalize and
+                            jQuery.
+                            <li>We updated Modernizr to v3 and added a sample Modernizr configuration file so you can create
+                                your own custom build.
+                                <li>We added a sample web app manifest file to the project to help you properly format your site
+                                    or app to save to a device's home screen.
+                                    <li>That's just the tip of the iceberg. This update includes well over 100 commits from more
+                                        than 45 developers.
+                                        <a href=https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md>Check out the Changelog for all the fun.</a>
+                </ul>
+        </div>
+        <div class="cta-option ">
+            <a class="btn btn-alt " href="https://www.youtube.com/watch?v=WkLO-q2wC80&amp;index=2&amp;list=PLdWHXDIdpitG0Ttvat9G5wJoqaU9cQvHh
+                        " data-ga-category="Outbound links " data-ga-action="Watch video " data-ga-label="Video playlist ">Watch older release videos!</a>
+        </div>
+    </div>
+    <div class="site-section " id="web">
+        <div class="container ">
+            <p class="instruction ">Press
+                <strong>control+m</strong> to enable and disable swanalekha.</p>
+            <textarea id="tryit "></textarea>
+
+            <h2>Usage</h2>
+            <div class="content ">
+                <p>
+                    To use this transliteration scheme in your webpage, include the following line your html pages.</p>
+                <pre>&lt;script src="https://swanalekha.smc.org.in/js/swanalekha-ml.js "&gt;&lt;/script&gt;</pre>
+                <p>Then bind swanalekha to textareas and input fields. Example:</p>
+                <pre>swanalekha( document.getElementById( 'id-of-input-field' ) );</pre>
+                <p>By default, the swanalekha input method is not enabled. It is enabled when users press control+m in the input
+                    field. If you want the input method enabled by default, pass it as an option.</p>
+            </div>
+            <pre>swanalekha( document.getElementById( 'id-of-input-field' ), {
+            enabled:true
+} );</pre>
+            <p>Once enabled, the input field will have a class swanalekha. This class can be used for providing any kind of
+                visual indication that input method is enabled. This page uses the following style to indicate swanalekha
+                is enabled.</p>
+            <pre>.swanalekha { border-left: 3px solid #cc0000; }</pre>
+        </div>
+    </div>
+    <div class=aside>
+        <div class=container>
+            <ul class=inline-block-list>
+                <li>
+                    <a href=https://gitlab.com/smc/swanalekha/issues data-ga-category="Outbound links
+                        " data-ga-action="Footer click " data-ga-label="Report issues ">
+                        <span class="Icon Icon--gitlab "></span> Report issues</a>
+                </li>
+                <li>
+                    <a href=https://gitlab.com/smc/swanalekha " data-ga-category="Outbound links " data-ga-action="Footer click "
+                        data-ga-label="Report issues ">
+                        <span class="Icon Icon--gitlab
+                        "></span>Source code</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=site-footer role=contentinfo>
+        <p>
+            <a class=twitter-share-button href=https://twitter.com/share data-count=none data-lang=en data-via=h5bp data-size=large data-text="HTML5 Boilerplate: The rock-solid professional front-end template "
+                data-url=https://html5boilerplate.com/>Tweet</a>
+            &nbsp;
+            <a class=twitter-follow-button href=https://twitter.com/h5bp data-show-count=false data-lang=en data-size=large>Follow @smcproject</a>
+            <p>A project from
+                <a href="https://smc.org.in ">SMC</a> maintained by
+                <br>
+                <a href="https://thottingal.in " />Santhosh Thottingal</a>
+
+    </div>
+    <script src="js/swanalekha-ml.js "></script>
+    <script>
+        window.onload = function () {
+            swanalekha(document.getElementById('tryit'), {
+                enabled: true
+            });
+        };
+    </script>
+</body>
