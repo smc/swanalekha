@@ -1,0 +1,101 @@
+%%                                  
+%% This is file 'swana.tex'
+%%
+%% Copyright (c) 2013, Sayahna Foundation, Trivandrum
+%%  URL: http://www.sayahna.org
+%%  Email: <info@sayahna.org>  
+%%
+%% This document may be distributed under the terms of the LaTeX Project 
+%% Public License, as described in lppl.txt in the base LaTeX distribution.
+%% Either version 1.3c or, at your option, any later version.
+%%
+
+\documentclass[a4paper]{article}
+
+\usepackage[svgnames,dvipsnames]{xcolor}
+\usepackage[colorlinks,bookmarksopen]{hyperref}
+\usepackage{tabls}
+\usepackage[inner=.25in,outer=.25in,
+   top=.5in,bottom=.5in,]{geometry}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX,Mapping=tex-text]{Rachana}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+\newfontfamily\malayalamfont[Script=Malayalam,
+    Mapping=tex-text]{Rachana}
+\newfontfamily\rachana[Script=Malayalam]{Rachana}
+\newfontfamily\En[Mapping=tex-text]{FreeSans}
+\newfontfamily\gar[Mapping=tex-text]{Gentium}
+\def\en{\color{black!70}\normalsize\En}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{malayalam}
+\setotherlanguages{english}
+\makeatletter
+\def\@urlcolor{black!60}
+\def\mhat{\expandafter\@gobble\string\^}
+\def\tldchr{\expandafter\@gobble\string\~}
+\def\undchr{\expandafter\@gobble\string\_}
+\makeatother
+\begin{document}
+
+\Large
+
+\pagestyle{empty}
+
+\title{സ്വനലേഖ --- മലയാളം നിവേശക രീതി}
+\date{}
+\maketitle
+\thispagestyle{empty}
+\centering
+
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\hline
+\multicolumn{8}{c}{സ്വരങ്ങള്‍}\\
+\hline
+അ & ആ & ഇ & ഈ & ഉ & ഊ & ഋ & ഌ \\
+\en a &\en aa A &\en i &\en ii I ee &\en u &\en uu U oo 
+        &\en RR & l\mhat\mhat \\
+\hline
+    & ാ & ി & ീ & ു & ൂ & ൃ & \\
+\hline 
+എ & ഏ & ഐ & ഒ & ഓ & ഔ & അം & അഃ \\
+\en e &\en E &\en ai ei &\en o &\en O &\en au ou &\en am\tldchr\space aM am\undchr &\en aH\\
+\hline
+െ & േ & ൈ &ൊ & ോ & ൗ ൌ &ം&  ഃ \\
+\hline
+\multicolumn{8}{c}{വ്യഞ്ജനങ്ങള്‍}\\
+\hline
+ക & ഖ & ഗ & ഘ & ങ  & ങ്ങ & ങ്ക & ന്റ \\
+\en k &\en kh K &\en g &\en gh G& \en ng2 & \en ng &
+ \en nk & \en nta \\
+\hline 
+ച & ഛ & ജ & ഝ & ഞ & & റ്റ & ക്ഷ \\
+\en ch & \en Ch chh &\en j &\en jh J &\en nh && \en TT &\en x \\
+\hline
+ട & ഠ & ഡ & ഢ & ണ && ക്യു & വൈ \\
+\en t & \en T &\en D &\en Dh &\en N && \en q &\en Y \\
+\hline
+ത & ഥ & ദ & ധ & ന & ഩ & ക്യൂ & ഞ്ച \\
+\en th &\en Th &\en d &\en dh& \en n & \en na3 & \en Q & \en nch\\
+\hline
+പ & ഫ & ബ & ഭ & മ && &\\
+\en p&\en f &\en b&\en bh & \en m &&&\\
+\hline
+യ & ര & ല & വ & ശ & ഷ & സ & ഹ \\
+\en y&\en r&\en l &\en v&\en z S&\en sh &\en s & \en h\\
+\hline
+ള & ഴ & റ &&&&&\\
+\en L &\en zh &\en R &&&&\\
+\hline
+\multicolumn{8}{c}{ചില്ലുകള്‍}\\
+\hline
+ന്‍ & ണ്‍ & ല്‍ & ള്‍ & ര്‍ & ൿ &&\\
+\en n\undchr &\en N\undchr &\en l\undchr &\en L\undchr &\en R\undchr \space r\undchr
+&\en k\undchr &&\\
+\hline
+
+\end{tabular} 
+\end{document}
+
