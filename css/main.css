@@ -316,6 +316,11 @@ pre {
     border: 1px dotted #333;
     padding: 10px;
     text-align: left;
+    overflow: scroll;
+}
+
+img {
+    width: 100%;
 }
 
 td {
