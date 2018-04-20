@@ -1,15 +1,3 @@
-%%                                  
-%% This is file 'swana.tex'
-%%
-%% Copyright (c) 2013, Sayahna Foundation, Trivandrum
-%%  URL: http://www.sayahna.org
-%%  Email: <info@sayahna.org>  
-%%
-%% This document may be distributed under the terms of the LaTeX Project 
-%% Public License, as described in lppl.txt in the base LaTeX distribution.
-%% Either version 1.3c or, at your option, any later version.
-%%
-
 \documentclass[a4paper]{article}
 
 \usepackage[svgnames,dvipsnames]{xcolor}
@@ -19,15 +7,13 @@
    top=.5in,bottom=.5in,]{geometry}
 
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX,Mapping=tex-text]{Rachana}
-\setsansfont{FreeSans}
-\setmonofont{FreeMono}
+\setmainfont[Ligatures=TeX,Mapping=tex-text]{Manjari}
+
 \newfontfamily\malayalamfont[Script=Malayalam,
-    Mapping=tex-text]{Rachana}
-\newfontfamily\rachana[Script=Malayalam]{Rachana}
-\newfontfamily\En[Mapping=tex-text]{FreeSans}
-\newfontfamily\gar[Mapping=tex-text]{Gentium}
-\def\en{\color{black!70}\normalsize\En}
+    Mapping=tex-text]{Manjari}
+\newfontfamily\Manjari[Script=Malayalam]{Manjari}
+\newfontfamily\En[Mapping=tex-text]{Fira Code Retina}
+\def\en{\color{black!80}\normalsize\En}
 
 \usepackage{polyglossia}
 \setdefaultlanguage{malayalam}
@@ -35,6 +21,7 @@
 \makeatletter
 \def\@urlcolor{black!60}
 \def\mhat{\expandafter\@gobble\string\^}
+\def\at{\expandafter\@gobble\string\@}
 \def\tldchr{\expandafter\@gobble\string\~}
 \def\undchr{\expandafter\@gobble\string\_}
 \makeatother
@@ -42,60 +29,66 @@
 
 \Large
 
-\pagestyle{empty}
-
-\title{സ്വനലേഖ --- മലയാളം നിവേശക രീതി}
-\date{}
-\maketitle
-\thispagestyle{empty}
 \centering
 
-\begin{tabular}{c|c|c|c|c|c|c|c}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\multicolumn{8}{c}{സ്വനലേഖ നിവേശകരീതി}\\
 \hline
 \multicolumn{8}{c}{സ്വരങ്ങള്‍}\\
 \hline
-അ & ആ & ഇ & ഈ & ഉ & ഊ & ഋ & ഌ \\
+അ & ആ & ഇ & ഈ & ഉ & ഊ & ഋ & ഌ & ൡ \\
 \en a &\en aa A &\en i &\en ii I ee &\en u &\en uu U oo 
-        &\en RR & l\mhat\mhat \\
+        &\en RR & \en l\mhat\mhat & \en l\mhat\mhat\mhat \\
 \hline
-    & ാ & ി & ീ & ു & ൂ & ൃ & \\
+    & ാ & ി & ീ & ു & ൂ & ൃ & ൢ & ൣ \\
+\en  &\en \at aa \at A &\en \at i &\en \at ii \at \at I \at ee &\en \at u &\en \at \at uu \at U \at oo 
+        &\en \at RR & \en \at l\mhat\mhat &\en  \at l\mhat\mhat\mhat \\
 \hline 
-എ & ഏ & ഐ & ഒ & ഓ & ഔ & അം & അഃ \\
-\en e &\en E &\en ai ei &\en o &\en O &\en au ou &\en am\tldchr\space aM am\undchr &\en aH\\
+എ & ഏ & ഐ & ഒ & ഓ & ഔ & അം & അഃ & ൟ \\
+\en e &\en E &\en ai ei &\en o &\en O &\en au ou &\en aM am\undchr\space m2 &\en aH & \en ee2 \\
 \hline
-െ & േ & ൈ &ൊ & ോ & ൗ ൌ &ം&  ഃ \\
+െ & േ & ൈ &ൊ & ോ & ൗ ൌ &ം&  ഃ & \\
+\en \at e &\en \at E &\en \at ai \at ei &\en \at o &\en \at O &\en  \at au  \at ou &\en \at aM am\undchr\space & \en \at aH  & \\
 \hline
 \multicolumn{8}{c}{വ്യഞ്ജനങ്ങള്‍}\\
 \hline
-ക & ഖ & ഗ & ഘ & ങ  & ങ്ങ & ങ്ക & ന്റ \\
-\en k &\en kh K &\en g &\en gh G& \en ng2 & \en ng &
- \en nk & \en nta \\
+ക & ഖ & ഗ & ഘ & ങ  & ങ്ങ & ങ്ക & ന്റ &\\
+\en ka &\en kha Ka &\en ga &\en gha Ga& \en nga2 & \en nga &
+ \en nka & \en nta &\\
 \hline 
-ച & ഛ & ജ & ഝ & ഞ & & റ്റ & ക്ഷ \\
-\en ch & \en Ch chh &\en j &\en jh J &\en nh && \en TT &\en x \\
+ച & ഛ & ജ & ഝ & ഞ & ഞ്ച & റ്റ  & ക്ഷ & \\
+\en cha & \en Cha chha &\en ja &\en jha Ja &\en nha &\en ncha & \en TTa &\en xa &\\
 \hline
-ട & ഠ & ഡ & ഢ & ണ && ക്യു & വൈ \\
-\en t & \en T &\en D &\en Dh &\en N && \en q &\en Y \\
+ട & ഠ & ഡ & ഢ & ണ & ണ്ട & ഺ & വൈ &\\
+\en ta & \en Ta &\en Da &\en Dha &\en Na & \en Nta & \en ta3 &\en Y &\\
 \hline
-ത & ഥ & ദ & ധ & ന & ഩ & ക്യൂ & ഞ്ച \\
-\en th &\en Th &\en d &\en dh& \en n & \en na3 & \en Q & \en nch\\
+ത & ഥ & ദ & ധ & ന & ഩ & ന്ത & ക്യു &\\
+\en tha &\en Tha &\en da &\en dha & \en na & \en na3 & \en ntha & \en q &\\
+\hline 
+പ & ഫ & ബ & ഭ & മ & മ്പ &  & ക്യൂ  &\\
+\en pa&\en fa &\en ba&\en bha & \en ma &\en mpa& & \en Q &\\
 \hline
-പ & ഫ & ബ & ഭ & മ && &\\
-\en p&\en f &\en b&\en bh & \en m &&&\\
+യ & ര & ല & വ & ശ & ഷ & സ & ഹ &\\
+\en ya&\en ra&\en la &\en va&\en za Sa&\en sha &\en sa & \en ha &\\
 \hline
-യ & ര & ല & വ & ശ & ഷ & സ & ഹ \\
-\en y&\en r&\en l &\en v&\en z S&\en sh &\en s & \en h\\
+ള & ഴ & റ & ൎ & ₹ & ്  &\en ZWNJ & \en ZWJ &\\
+\en La &\en zha &\en Ra &\en r\# & \en roo2 ruu2 & \mhat & \undchr & \tldchr &\\
 \hline
-ള & ഴ & റ &&&&&\\
-\en L &\en zh &\en R &&&&\\
+\multicolumn{9}{c}{ചില്ലുകള്‍}\\
 \hline
-\multicolumn{8}{c}{ചില്ലുകള്‍}\\
+ന്‍ & ണ്‍ & ല്‍ & ള്‍ & ര്‍ & ൿ & ൔ & ൕ & ൖ \\
+\en n\undchr \space n2 &\en N\undchr \space N2 &\en l\undchr \space l2 &\en L\undchr \space L2 &\en R\undchr \space r\undchr \space r2
+&\en k\undchr \space k3 & \en m\undchr & \en y\undchr & \en zh\undchr \\
 \hline
-ന്‍ & ണ്‍ & ല്‍ & ള്‍ & ര്‍ & ൿ &&\\
-\en n\undchr &\en N\undchr &\en l\undchr &\en L\undchr &\en R\undchr \space r\undchr
-&\en k\undchr &&\\
-\hline
+\end{tabular} 
 
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+
+\multicolumn{9}{c}{അക്കങ്ങൾ}\\
+\hline
+൦ & ൧ & ൨ & ൩ & ൪ & ൫  & ൬  & ൭  & ൮ & ൯  \\
+\en \at0 & \en \at1 & \en \at2 & \en \at3 & \en \at4 & \en \at5 & \en \at6 & \en \at7 & \en \at8 & \en \at9 \\
+\hline
 \end{tabular} 
 \end{document}
 
