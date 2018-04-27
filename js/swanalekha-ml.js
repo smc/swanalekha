@@ -2,8 +2,7 @@
  * Copyright (c) 2018 Santhosh Thottingal <santhosh.thottingal@gmail.com>
  * Released under the terms of the MIT license.
  */
-/*jshint browser:true */
-var rules = {
+const SWANALEKHA_RULES = {
 	a: 'അ',
 	a2: 'ആ',
 	a3: 'എ',
@@ -1165,7 +1164,6 @@ var rules = {
 	pi2: 'പൈ',
 	pi3: 'പ്പി',
 	Pi: 'പി',
-	Pi2: 'പൈ',
 	pii: 'പീ',
 	pee: 'പീ',
 	Pee: 'പീ',
@@ -2173,115 +2171,121 @@ var rules = {
 /**
  * Bind swanalekha to the input field
  */
-function swanalekha(widget, options) {
-	var pattern, patternStart, tabCount;
+class swanalekha {
+	constructor(element, options) {
+		this.rules = SWANALEKHA_RULES;
+		this.patternStart = 0;
+		this.element = element;
+		this.patten = '';
+		this.tabCount = 0;
+		this.enabled = options && options.enabled || false;
 
-	widget.enabled = options && options.enabled || false;
+		if (this.enabled) {
+			this.element.className = this.element.className + ' swanalekha';
+		}
 
-	if (widget.enabled) {
-		widget.className = widget.className + ' swanalekha';
+		this.listen();
 	}
 
-	function isToggleEvent(event) {
-		var keyCode;
-
-		keyCode = event.keyCode || event.which;
+	isToggleEvent(event) {
+		let keyCode = event.keyCode || event.which;
 		return (keyCode === 77 && event.ctrlKey);
 	}
 
-	function listen() {
-		widget.onkeydown = function (event) {
-			if (isToggleEvent(event)) {
-				widget.enabled = !widget.enabled;
-				if (widget.enabled) {
-					widget.className = widget.className + ' swanalekha';
-				} else {
-					widget.className = widget.className.replace('swanalekha', '');
-					return;
-				}
-			} else {
-				var keyCode = event.keyCode || event.which;
-				if (keyCode === 9) { // backspace
-					keyPressHandler(event);
-				}
-			}
-		};
-
-		function keyPressHandler(event) {
-			if (widget.enabled) {
-				return transliterate(event);
-			} else {
-				return true;
-			}
+	keyPressHandler(event) {
+		if (this.enabled) {
+			return this.transliterate(event);
+		} else {
+			return true;
 		}
-		widget.onkeypress = keyPressHandler;
 	}
 
-	function isExplorer() {
+	keyDownHandler(event) {
+		if (this.isToggleEvent(event)) {
+			this.enabled = !this.enabled;
+			if (this.enabled) {
+				this.element.className = this.element.className + ' swanalekha';
+			} else {
+				this.element.className = this.element.className.replace('swanalekha', '');
+				return;
+			}
+		} else {
+			let keyCode = event.keyCode || event.which;
+			if (keyCode === 9) { // backspace
+				this.keyPressHandler(event);
+			}
+		}
+	}
+
+	listen() {
+		this.element.onkeydown = this.keyDownHandler.bind(this);
+		this.element.onkeypress = this.keyPressHandler.bind(this);
+	}
+
+	isExplorer() {
 		return (document.selection && document.selection.createRange().isEqual);
 	}
 
-	function transliterate(event) {
-		var stepback, pos, char, range, cursorLoc, scrollTop, kCode = event.keyCode || event.which;
+	transliterate(event) {
+		let kCode = event.keyCode || event.which;
 
 		if (kCode == 8) { //backspace
-			pattern = pattern.replace(/aAeEiIoOuU0-9/g, '');
-			tabCount = 1;
+			this.pattern = this.pattern.replace(/aAeEiIoOuU0-9/g, '');
+			this.tabCount = 1;
 			return;
 		}
 		if (event.ctrlKey || event.altKey || event.metaKey) {
 			return true;
 		}
-		char = String.fromCharCode(kCode);
-		pos = widget.selectionStart;
+		let char = String.fromCharCode(kCode);
 		if (kCode === 9) { /*Tab key*/
-			tabCount++;
-			if (pattern !== null || pattern !== '') {
-				if (tabCount === 2) {
-					pattern = pattern + tabCount;
+			this.tabCount++;
+			if (this.pattern !== null || this.pattern !== '') {
+				if (this.tabCount === 2) {
+					this.pattern = this.pattern + this.tabCount;
 				} else {
-					if (rules[pattern.substring(0, pattern.length - 1) + tabCount]) {
-						pattern = pattern.substring(0, pattern.length - 1) + tabCount;
+					if (this.rules[this.pattern.substring(0, this.pattern.length - 1) + this.tabCount]) {
+						this.pattern = this.pattern.substring(0, this.pattern.length - 1) + this.tabCount;
 					} else {
-						tabCount = 1;
-						pattern = pattern.substring(0, pattern.length - 1);
+						this.tabCount = 1;
+						this.pattern = this.pattern.substring(0, this.pattern.length - 1);
 					}
 				}
 			}
 		} else {
-			pattern = pattern + char;
+			this.pattern = this.pattern + char;
 		}
-		if (pattern.length > 5) {
-			pattern = '';
-			tabCount = 1;
+		if (this.pattern.length > 5) {
+			this.pattern = '';
+			this.tabCount = 1;
 		}
-		if (tabCount >= 2) {
+		if (this.tabCount > 1) {
 			event.preventDefault();
 		}
-		var mal = rules[pattern];
+		let mal = this.rules[this.pattern];
 		if (!mal) {
-			pattern = char;
-			tabCount = 1;
-			patternStart = widget.selectionStart;
-			mal = rules[pattern];
+			this.pattern = char;
+			this.tabCount = 1;
+			this.patternStart = this.element.selectionStart;
+			mal = this.rules[this.pattern];
 		}
 		if (mal) {
-			if (isExplorer()) {
-				range = document.selection.createRange();
-				stepback = range - patternStart;
+			if (this.isExplorer()) {
+				let range = document.selection.createRange();
+				let stepback = range - this.patternStart;
 				range.moveStart('character', -stepback);
 				range.text = mal;
 				range.collapse(false);
 				range.select();
 				return false;
 			} else {
-				scrollTop = widget.scrollTop;
-				cursorLoc = widget.selectionStart;
-				stepback = cursorLoc - patternStart;
-				widget.value = widget.value.substr(0, patternStart) + mal + widget.value.substr(widget.selectionEnd, widget.value.length);
-				widget.scrollTop = scrollTop;
-				widget.selectionStart = cursorLoc + mal.length - stepback;
-				widget.selectionEnd = cursorLoc + mal.length - stepback;
+				let scrollTop = this.element.scrollTop;
+				let cursorLoc = this.element.selectionStart;
+				let stepback = cursorLoc - this.patternStart;
+				this.element.value = this.element.value.substr(0, this.patternStart) + mal + this.element.value.substr(this.element.selectionEnd, this.element.value.length);
+				this.element.scrollTop = scrollTop;
+				this.element.selectionStart = cursorLoc + mal.length - stepback;
+				this.element.selectionEnd = cursorLoc + mal.length - stepback;
 				return false;
 			}
 		}
@@ -2290,6 +2294,4 @@ function swanalekha(widget, options) {
 		}
 		return true;
 	}
-
-	listen();
 }
