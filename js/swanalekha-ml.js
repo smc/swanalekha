@@ -2188,6 +2188,7 @@ class swanalekha {
 	}
 
 	isToggleEvent(event) {
+		// 77 - The letter M, for Ctrl+M
 		let keyCode = event.keyCode || event.which;
 		return (keyCode === 77 && event.ctrlKey);
 	}
@@ -2207,8 +2208,11 @@ class swanalekha {
 				this.element.className = this.element.className + ' swanalekha';
 			} else {
 				this.element.className = this.element.className.replace('swanalekha', '');
-				return;
 			}
+			event.preventDefault();
+			event.stopPropagation();
+
+			return false;
 		} else {
 			let keyCode = event.keyCode || event.which;
 			if (keyCode === 9) { // backspace
