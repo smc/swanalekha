@@ -2195,7 +2195,7 @@ class swanalekha {
 
 	keyPressHandler(event) {
 		if (this.enabled) {
-			return this.transliterate(event);
+			return this.process(event);
 		} else {
 			return true;
 		}
@@ -2230,7 +2230,43 @@ class swanalekha {
 		return (document.selection && document.selection.createRange().isEqual);
 	}
 
-	transliterate(event) {
+	/**
+	 * Returns an array [start, end] of the beginning
+	 * and the end of the current selection in $element
+	 */
+	getCaretPosition(el) {
+		var start = 0, end = 0;
+
+		if (typeof el.selectionStart === 'number' && typeof el.selectionEnd === 'number') {
+			start = el.selectionStart;
+			end = el.selectionEnd;
+		}
+
+		return [start, end];
+	}
+
+	replaceText(replacement, start, end ) {
+		if (typeof this.element.selectionStart === 'number' && typeof this.element.selectionEnd === 'number') {
+			// IE9+ and all other browsers
+			let scrollTop = this.element.scrollTop;
+
+			// This could be made better if range selection worked on browsers.
+			// But for complex scripts, browsers place cursor in unexpected places
+			// and it's not possible to fix cursor programmatically.
+			// Ref Bug https://bugs.webkit.org/show_bug.cgi?id=66630
+			this.element.value = this.element.value.substring(0, start)
+				+ replacement
+				+ this.element.value.substring(end, this.element.value.length);
+			// restore scroll
+			this.element.scrollTop = scrollTop;
+			// set selection
+			this.element.selectionStart = this.element.selectionEnd = start + replacement.length;
+		} else {
+			// IE8 and lower - not suported
+		}
+	}
+
+	process(event) {
 		let kCode = event.keyCode || event.which;
 
 		if (kCode == 8) { //backspace
@@ -2241,7 +2277,23 @@ class swanalekha {
 		if (event.ctrlKey || event.altKey || event.metaKey) {
 			return true;
 		}
+		let mal = this.transliterate(kCode);
+		if (mal) {
+			let pos = this.getCaretPosition(this.element);
+			//	let start = pos[0];
+			let end = pos[1];
+			this.replaceText(mal, this.patternStart, end);
+			return false;
+		}
+		if (kCode === 9) {
+			return false;
+		}
+		return true;
+	}
+
+	transliterate(kCode) {
 		let char = String.fromCharCode(kCode);
+
 		if (kCode === 9) { /*Tab key*/
 			this.tabCount++;
 			if (this.pattern !== null || this.pattern !== '') {
@@ -2268,34 +2320,12 @@ class swanalekha {
 		}
 		let mal = this.rules[this.pattern];
 		if (!mal) {
+			// Diverge point
 			this.pattern = char;
 			this.tabCount = 1;
 			this.patternStart = this.element.selectionStart;
 			mal = this.rules[this.pattern];
 		}
-		if (mal) {
-			if (this.isExplorer()) {
-				let range = document.selection.createRange();
-				let stepback = range - this.patternStart;
-				range.moveStart('character', -stepback);
-				range.text = mal;
-				range.collapse(false);
-				range.select();
-				return false;
-			} else {
-				let scrollTop = this.element.scrollTop;
-				let cursorLoc = this.element.selectionStart;
-				let stepback = cursorLoc - this.patternStart;
-				this.element.value = this.element.value.substr(0, this.patternStart) + mal + this.element.value.substr(this.element.selectionEnd, this.element.value.length);
-				this.element.scrollTop = scrollTop;
-				this.element.selectionStart = cursorLoc + mal.length - stepback;
-				this.element.selectionEnd = cursorLoc + mal.length - stepback;
-				return false;
-			}
-		}
-		if (kCode === 9) {
-			return false;
-		}
-		return true;
+		return mal;
 	}
 }
