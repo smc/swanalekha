@@ -290,18 +290,17 @@
             <p class="instruction">Press
                 <strong>control+m</strong> to enable and disable swanalekha.</p>
             <textarea id="tryit"></textarea>
-
             <h2>Usage</h2>
             <div class="content">
                 <p>
                     To use this transliteration scheme in your webpage, include the following line your html pages.</p>
                 <pre>&lt;script src="https://swanalekha.smc.org.in/js/swanalekha-ml.js"&gt;&lt;/script&gt;</pre>
                 <p>Then bind swanalekha to textareas and input fields. Example:</p>
-                <pre>new swanalekha( document.getElementById( 'id-of-input-field' ) );</pre>
+                <pre>new Swanalekha( document.getElementById( 'id-of-input-field' ) );</pre>
                 <p>By default, the swanalekha input method is not enabled. It is enabled when users press control+m in the input
                     field. If you want the input method enabled by default, pass it as an option.</p>
             </div>
-            <pre>new swanalekha( document.getElementById( 'id-of-input-field' ), {
+            <pre>new Swanalekha( document.getElementById( 'id-of-input-field' ), {
             enabled:true
 } );</pre>
             <p>Once enabled, the input field will have a class swanalekha. This class can be used for providing any kind of
@@ -396,7 +395,7 @@
     <script>
         window.onload = function () {
             let element = document.getElementById('tryit');
-            new swanalekha(element, { enabled: true });
+            new Swanalekha(element, { enabled: true });
         };
     </script>
 </body>

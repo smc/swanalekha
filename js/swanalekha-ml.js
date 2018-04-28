@@ -2171,7 +2171,7 @@ const SWANALEKHA_RULES = {
 /**
  * Bind swanalekha to the input field
  */
-class swanalekha {
+class Swanalekha {
 	constructor(element, options) {
 		this.rules = SWANALEKHA_RULES;
 		this.patternStart = 0;
@@ -2201,17 +2201,38 @@ class swanalekha {
 		}
 	}
 
+	enable() {
+		this.enabled = true;
+	}
+
+	disable() {
+		this.enabled = false;
+	}
+
+	onEnable() {
+		this.element.className = this.element.className + ' swanalekha';
+	}
+
+	onDisable() {
+		this.element.className = this.element.className.replace('swanalekha', '');
+	}
+
+	toggle() {
+		if (this.enabled) {
+			this.disable();
+			this.onDisable();
+		} else {
+			this.enable();
+			this.onEnable();
+		}
+	}
+
 	keyDownHandler(event) {
 		if (this.isToggleEvent(event)) {
-			this.enabled = !this.enabled;
-			if (this.enabled) {
-				this.element.className = this.element.className + ' swanalekha';
-			} else {
-				this.element.className = this.element.className.replace('swanalekha', '');
-			}
+			this.toggle();
+
 			event.preventDefault();
 			event.stopPropagation();
-
 			return false;
 		} else {
 			let keyCode = event.keyCode || event.which;
@@ -2245,7 +2266,7 @@ class swanalekha {
 		return [start, end];
 	}
 
-	replaceText(replacement, start, end ) {
+	replaceText(replacement, start, end) {
 		if (typeof this.element.selectionStart === 'number' && typeof this.element.selectionEnd === 'number') {
 			// IE9+ and all other browsers
 			let scrollTop = this.element.scrollTop;
