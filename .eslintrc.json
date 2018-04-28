@@ -7,6 +7,10 @@
     "parserOptions": {
         "sourceType": "module"
     },
+    "globals": {
+        "Swanalekha": true,
+        "rangy": true
+    },
     "rules": {
         "indent": [
             "error",

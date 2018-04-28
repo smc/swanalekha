@@ -2251,22 +2251,175 @@ class Swanalekha {
 		return (document.selection && document.selection.createRange().isEqual);
 	}
 
-	/**
-	 * Returns an array [start, end] of the beginning
-	 * and the end of the current selection in $element
-	 */
-	getCaretPosition(el) {
-		var start = 0, end = 0;
+	isContentEditable() {
+		return this.element.getAttribute('contenteditable');
+	}
 
-		if (typeof el.selectionStart === 'number' && typeof el.selectionEnd === 'number') {
-			start = el.selectionStart;
-			end = el.selectionEnd;
+	getCECaretPosition(element) {
+		var traverseTextNodes, charIndex = 0,
+			start = 0,
+			end = 0,
+			foundStart = false,
+			foundEnd = false;
+
+		let sel = rangy.getSelection();
+
+		traverseTextNodes = (node, range) => {
+			var i, childNodesCount;
+
+			if (node.nodeType === Node.TEXT_NODE) {
+				if (!foundStart && node === range.startContainer) {
+					start = charIndex + range.startOffset;
+					foundStart = true;
+				}
+
+				if (foundStart && node === range.endContainer) {
+					end = charIndex + range.endOffset;
+					foundEnd = true;
+				}
+
+				charIndex += node.length;
+			} else {
+				childNodesCount = node.childNodes.length;
+
+				for (i = 0; i < childNodesCount; ++i) {
+					traverseTextNodes(node.childNodes[i], range);
+					if (foundEnd) {
+						break;
+					}
+				}
+			}
+		};
+
+		if (sel.rangeCount) {
+			traverseTextNodes(element, sel.getRangeAt(0));
 		}
 
 		return [start, end];
 	}
 
+	/**
+	 * Returns an array [start, end] of the beginning
+	 * and the end of the current selection in $element
+	 */
+	getCaretPosition(element) {
+		let start = 0, end = 0;
+
+		if (this.isContentEditable()) {
+			return this.getCECaretPosition(element);
+		}
+
+		if (typeof element.selectionStart === 'number' && typeof element.selectionEnd === 'number') {
+			start = element.selectionStart;
+			end = element.selectionEnd;
+		}
+
+		return [start, end];
+	}
+
+	setCaretPosition(element, position) {
+		var currentPosition,
+			startCorrection = 0,
+			endCorrection = 0;
+
+		this.setCECaretPosition(element, position);
+		currentPosition = this.getCECaretPosition(element);
+		// see Bug https://bugs.webkit.org/show_bug.cgi?id=66630
+		while (position.start !== currentPosition[0]) {
+			position.start -= 1; // go back one more position.
+			if (position.start < 0) {
+				// never go beyond 0
+				break;
+			}
+			this.setCECaretPosition(element, position);
+			currentPosition = this.getCECaretPosition(element);
+			startCorrection += 1;
+		}
+
+		while (position.end !== currentPosition[1]) {
+			position.end += 1; // go forward one more position.
+			this.setCECaretPosition(element, position);
+			currentPosition = this.getCECaretPosition(element);
+			endCorrection += 1;
+			if (endCorrection > 10) {
+				// XXX avoid rare case of infinite loop here.
+				break;
+			}
+		}
+
+		return [startCorrection, endCorrection];
+	}
+
+	/**
+	 * Set the caret position in the div.
+	 * @param {Element} element The content editable div element
+	 * @param {number} position an object with start and end properties.
+	 */
+	setCECaretPosition(element, position) {
+		var nextCharIndex, traverseTextNodes,
+			charIndex = 0,
+			range = rangy.createRange(),
+			foundStart = false,
+			foundEnd = false;
+
+		range.collapseToPoint(element, 0);
+
+		traverseTextNodes = (node) => {
+			var i, len;
+
+			if (node.nodeType === 3) {
+				nextCharIndex = charIndex + node.length;
+
+				if (!foundStart && position.start >= charIndex && position.start <= nextCharIndex) {
+					range.setStart(node, position.start - charIndex);
+					foundStart = true;
+				}
+
+				if (foundStart && position.end >= charIndex && position.end <= nextCharIndex) {
+					range.setEnd(node, position.end - charIndex);
+					foundEnd = true;
+				}
+
+				charIndex = nextCharIndex;
+			} else {
+				for (i = 0, len = node.childNodes.length; i < len; ++i) {
+					traverseTextNodes(node.childNodes[i]);
+					if (foundEnd) {
+						rangy.getSelection().setSingleRange(range);
+						break;
+					}
+				}
+			}
+		};
+
+		traverseTextNodes(element);
+	}
+
+	replaceTextInCE(replacement, start, end) {
+		let correction = this.setCaretPosition(this.element, { start, end });
+
+		let selection = rangy.getSelection();
+		let range = selection.getRangeAt(0);
+
+		if (correction[0] > 0) {
+			replacement = selection.toString().substring(0, correction[0]) + replacement;
+		}
+
+		let textNode = document.createTextNode(replacement);
+		range.deleteContents();
+		range.insertNode(textNode);
+		range.commonAncestorContainer.normalize();
+		start = end = start + replacement.length - correction[0];
+		this.setCaretPosition(this.element, { start, end });
+
+		return;
+	}
+
 	replaceText(replacement, start, end) {
+		if (this.isContentEditable()) {
+			return this.replaceTextInCE(replacement, start, end);
+		}
+
 		if (typeof this.element.selectionStart === 'number' && typeof this.element.selectionEnd === 'number') {
 			// IE9+ and all other browsers
 			let scrollTop = this.element.scrollTop;
@@ -2301,9 +2454,9 @@ class Swanalekha {
 		let mal = this.transliterate(kCode);
 		if (mal) {
 			let pos = this.getCaretPosition(this.element);
-			//	let start = pos[0];
+			let start = this.patternStart;
 			let end = pos[1];
-			this.replaceText(mal, this.patternStart, end);
+			this.replaceText(mal, start, end);
 			return false;
 		}
 		if (kCode === 9) {
@@ -2344,7 +2497,7 @@ class Swanalekha {
 			// Diverge point
 			this.pattern = char;
 			this.tabCount = 1;
-			this.patternStart = this.element.selectionStart;
+			this.patternStart = this.getCaretPosition(this.element)[0];
 			mal = this.rules[this.pattern];
 		}
 		return mal;
