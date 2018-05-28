@@ -1,6 +1,8 @@
 ;; ml-swanalekha.mim -- m17n version of  Swanalekha Malayalam input method
-;; Copyright (C) 2008, Santhosh Thottingal <santhosh.thottingal@gmail.com>, Swathanthra Malayalam Computing
-;; This file is part of the m17n database; a sub-part of the m17n
+;; Copyright (C) 2008-2018, Santhosh Thottingal <santhosh.thottingal@gmail.com>,
+;; Swathanthra Malayalam Computing
+
+;; This file is part of the m17n contrib; a sub-part of the m17n
 ;; library.
 
 ;; The m17n library is free software; you can redistribute it and/or
@@ -15,12 +17,13 @@
 
 ;; You should have received a copy of the GNU Lesser General Public
 ;; License along with the m17n library; if not, write to the Free
-;; Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
-;; 02111-1307, USA.
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
 
 (input-method ml swanalekha)
 
-(description "Swanalekha Malayalam input method")
+(description "Swanalekha Malayalam input method
+For detailed documentation, refer https://swanalekha.smc.org.in")
 
 
 (title "സ്വനലേഖ")
@@ -41,7 +44,7 @@
   ("s") ("t") ("u") ("v") ("w") ("x") ("y") ("z"))
 
  (map
-     ("^" (("്")))
+  ("^" (("്")))
   ("~" (("‍")))
   ("_" (("‌")))
   ("@A" (("ാ")))
