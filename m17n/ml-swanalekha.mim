@@ -1668,9 +1668,8 @@ For detailed documentation, refer https://swanalekha.smc.org.in")
   ;; When a complete sequence is typed, shift to "select" state
   ;; to allow users to select one from the candidates.
   (map (shift select))
-  (nil (hide) (shift check-undo))))
+  (nil (hide) (shift check-undo)))
 
-(state
  (check-undo
   ;; When Backspace is typed, cancel the last input.
   (backspace (undo))
