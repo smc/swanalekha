@@ -1,0 +1,26 @@
+[Package]
+Version=7.0
+ExecuteProgram=
+ReadMeFile=readme.html
+GraphicFile=Malayalam_Swanalekha_Image.png
+[StartMenu]
+Path=
+Create=0
+AddUninstallEntry=0
+[Info]
+Version="1.1.0",""
+Name="Malayalam Swanalekha",""
+Copyright="MIT License",""
+Author="Ramesh Kunnappully","mailto:ramesh1@protonmail.com"
+WebSite="",""
+[Files]
+0="Keyboard Malayalam Swanalekha","Malayalam_Swanalekha.kmx",0
+1="File readme.html","readme.html",0
+2="File Malayalam_Swanalekha_Image.png","Malayalam_Swanalekha_Image.png",0
+3="Package information","kmp.inf",0
+4="Package information (JSON)","kmp.json",0
+[Keyboard0]
+Name=Malayalam Swanalekha
+ID=malayalam_swanalekha
+Version=1.1.0
+Language0=ml,Malayalam
