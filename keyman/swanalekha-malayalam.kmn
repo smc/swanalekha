@@ -1,0 +1,1625 @@
+store(&Version) "9.0"             c This keyboard is for use with Keyman 9.0
+store(&NAME) 'Malayalam Swanalekha'
+store(&WINDOWSLANGUAGES) 'x044C'
+store(&ETHNOLOGUECODE) 'mal'
+store(&LANGUAGE) 'x044C'
+store(&TARGETS) 'windows'
+store(&COPYRIGHT) 'MIT License'
+store(&keyboardversion) "1.1.0"
+store(&BITMAP) 'Malayalam_Swanalekha_Icon_2.ico'
+store(&MESSAGE) U+0027 'Malayalam Swanalekha' U+0027 ' keyboard is based on ' U+0027 'Swanalekha' U+0027 ' Malayalam input method developed by Santhosh Thottingal.'
+begin Unicode > use(main)
+group(main) using keys
++"_"> U+200C c - _  // ZWNJ
++"@">"@" c - @  
+"@"+"0">"൦" c - @0  
+"@"+"1">"൧" c - @1  
+"@"+"2">"൨" c - @2  
+"@"+"3">"൩" c - @3  
+"@"+"4">"൪" c - @4  
+"@"+"5">"൫" c - @5  
+"@"+"6">"൬" c - @6  
+"@"+"7">"൭" c - @7  
+"@"+"8">"൮" c - @8  
+"@"+"9">"൯" c - @9  
+"@"+"a">"@a" c - @a  //new
+"@a"+"a">"ാ" c - @aa  
+"@a"+"e">"േ" c - @ae  
+"@a"+"h">"ഃ" c - @ah  
+"@a"+"H">"ഃ" c - @aH  
+"@a"+"i">"ൈ" c - @ai  
+"@a"+"m">"ം" c - @am  
+"@a"+"M">"ം" c - @aM  
+"@a"+"u">"ൗ" c - @au  
+"@"+"A">"ാ" c - @A  
+"@"+"e">"െ" c - @e  
+"െ"+"e">"ീ" c - @ee  
+"െ"+"i">"ൈ" c - @ei  
+"@"+"E">"േ" c - @E  
+"@"+"i">"ി" c - @i  
+"ി"+"i">"ീ" c - @ii  
+"@"+"I">"ീ" c - @I  
+"@"+"l">"@l" c -   //new
+"@l"+"^">"@l^" c -   //new
+"@l^"+"^">"ൢ" c - @l^^  
+"ൢ"+"^">"ൣ" c - @l^^^  
+"@"+"L">"@L" c -   //new
+"@L"+"^">"@L^" c -   //new
+"@L^"+"^">"ൢ" c - @L^^  
+c duplication "ൢ"+"^">"ൣ" c - @L^^^  
+"@"+"o">"ൊ" c - @o  
+"ൊ"+"o">"ൂ" c - @oo  
+"ൊ"+"u">"ൌ" c - @ou  
+"@"+"O">"ോ" c - @O  
+"@"+"R">"ൃ" c - @R  
+"@"+"u">"ു" c - @u  
+"ു"+"u">"ൂ" c - @uu  
+"@"+"U">"ൂ" c - @U  
++"^">"്" c - ^  
++"~"> U+200D c - ~  //ZWJ
++"a">"അ" c - a  
+"അ"+"a">"ആ" c - aa  
+"അ"+"e">"ഏ" c - ae  
+"അ"+"H">"അഃ" c - aH  
+"അ"+"i">"ഐ" c - ai  
+"അ"+"M">"അം" c - aM  
+"അ"+"u">"ഔ" c - au  
++"A">"ആ" c - A  
++"b">"ബ്" c - b  
+"ബ്"+"a">"ബ" c - ba  
+"ബ"+"a">"ബാ" c - baa  
+"ബ"+"e">"ബേ" c - bae  
+"ബ"+"H">"ബഃ" c - baH  
+"ബ"+"i">"ബൈ" c - bai  
+"ബ"+"M">"ബം" c - baM  
+"ബ"+"u">"ബൗ" c - bau  
+"ബ്"+"A">"ബാ" c - bA  
+"ബ്"+"e">"ബെ" c - be  
+"ബെ"+"e">"ബീ" c - bee  
+"ബെ"+"i">"ബൈ" c - bei  
+"ബ്"+"E">"ബേ" c - bE  
+"ബ്"+"h">"ഭ്" c - bh  
+"ഭ്"+"^">"ഭ്" c - bh^  
+"ഭ്"+"a">"ഭ" c - bha  
+"ഭ"+"a">"ഭാ" c - bhaa  
+"ഭ"+"e">"ഭേ" c - bhae  
+"ഭ"+"H">"ഭഃ" c - bhaH  
+"ഭ"+"i">"ഭൈ" c - bhai  
+"ഭ"+"M">"ഭം" c - bhaM  
+"ഭ"+"u">"ഭൗ" c - bhau  
+"ഭ്"+"A">"ഭാ" c - bhA  
+"ഭ്"+"e">"ഭെ" c - bhe  
+"ഭെ"+"e">"ഭീ" c - bhee  
+"ഭെ"+"i">"ഭൈ" c - bhei  
+"ഭ്"+"E">"ഭേ" c - bhE  
+"ഭ്"+"i">"ഭി" c - bhi  
+"ഭി"+"i">"ഭീ" c - bhii  
+"ഭ്"+"I">"ഭീ" c - bhI  
+"ഭ്"+"o">"ഭൊ" c - bho  
+"ഭൊ"+"o">"ഭൂ" c - bhoo  
+"ഭൊ"+"u">"ഭൌ" c - bhou  
+"ഭ്"+"O">"ഭോ" c - bhO  
+"ഭ്"+"R">"ഭൃ" c - bhR  
+"ഭ്"+"u">"ഭു" c - bhu  
+"ഭു"+"u">"ഭൂ" c - bhuu  
+"ഭ്"+"U">"ഭൂ" c - bhU  
+"ബ്"+"i">"ബി" c - bi  
+"ബി"+"i">"ബീ" c - bii  
+"ബ്"+"I">"ബീ" c - bI  
+"ബ്"+"o">"ബൊ" c - bo  
+"ബൊ"+"o">"ബൂ" c - boo  
+"ബൊ"+"u">"ബൌ" c - bou  
+"ബ്"+"O">"ബോ" c - bO  
+"ബ്"+"R">"ബൃ" c - bR  
+"ബ്"+"u">"ബു" c - bu  
+"ബു"+"u">"ബൂ" c - buu  
+"ബ്"+"U">"ബൂ" c - bU  
++"B">"ഭ്" c - B  
+c duplication "ഭ്"+"a">"ഭ" c - Ba  
+c duplication "ഭ"+"a">"ഭാ" c - Baa  
+c duplication "ഭ"+"H">"ഭഃ" c - BaH  
+c duplication "ഭ"+"i">"ഭൈ" c - Bai  
+c duplication "ഭ"+"M">"ഭം" c - BaM  
+c duplication "ഭ"+"u">"ഭൗ" c - Bau  
+c duplication "ഭ്"+"A">"ഭാ" c - BA  
+c duplication "ഭ്"+"e">"ഭെ" c - Be  
+c duplication "ഭെ"+"e">"ഭീ" c - Bee  
+c duplication "ഭെ"+"i">"ഭൈ" c - Bei  
+c duplication "ഭ്"+"E">"ഭേ" c - BE  
+c duplication "ഭ്"+"i">"ഭി" c - Bi  
+c duplication "ഭി"+"i">"ഭീ" c - Bii  
+c duplication "ഭ്"+"I">"ഭീ" c - BI  
+c duplication "ഭ്"+"o">"ഭൊ" c - Bo  
+c duplication "ഭൊ"+"o">"ഭൂ" c - Boo  
+c duplication "ഭൊ"+"u">"ഭൌ" c - Bou  
+c duplication "ഭ്"+"O">"ഭോ" c - BO  
+c duplication "ഭ്"+"R">"ഭൃ" c - BR  
+c duplication "ഭ്"+"u">"ഭു" c - Bu  
+c duplication "ഭു"+"u">"ഭൂ" c - Buu  
+c duplication "ഭ്"+"U">"ഭൂ" c - BU  
++"c">"ക്" c - c  
+"ക്"+"_">"ൿ" c - c_  
+"ക്"+"~">"ൿ" c - c~  
+"ക്"+"a">"ക" c - ca  
+"ക"+"a">"കാ" c - caa  
+"ക"+"e">"കേ" c - cae  
+"ക"+"i">"കൈ" c - cai  
+"ക"+"u">"കൗ" c - cau  
+"ക്"+"A">"കാ" c - cA  
+"ക്"+"e">"കെ" c - ce  
+"കെ"+"e">"കീ" c - cee  
+"കെ"+"i">"കൈ" c - cei  
+"ക്"+"E">"കേ" c - cE  
+"ക്"+"h">"ച്" c - ch  
+"ച്"+"^">"ച്" c - ch^  
+"ച്"+"a">"ച" c - cha  
+"ച"+"a">"ചാ" c - chaa  
+"ച"+"e">"ചേ" c - chae  
+"ച"+"H">"ചഃ" c - chaH  
+"ച"+"i">"ചൈ" c - chai  
+"ച"+"M">"ചം" c - chaM  
+"ച"+"u">"ചൗ" c - chau  
+"ച്"+"A">"ചാ" c - chA  
+"ച്"+"e">"ചെ" c - che  
+"ചെ"+"e">"ചീ" c - chee  
+"ചെ"+"i">"ചൈ" c - chei  
+"ച്"+"E">"ചേ" c - chE  
+"ച്"+"h">"ഛ്" c - chh  
+"ഛ്"+"^">"ഛ്" c - chh^  
+"ഛ്"+"a">"ഛ" c - chha  
+"ഛ"+"a">"ഛാ" c - chhaa  
+"ഛ"+"e">"ഛേ" c - chhae  
+"ഛ"+"H">"ഛഃ" c - chhaH  
+"ഛ"+"i">"ഛൈ" c - chhai  
+"ഛ"+"M">"ഛം" c - chhaM  
+"ഛ"+"u">"ഛൗ" c - chhau  
+"ഛ്"+"A">"ഛാ" c - chhA  
+"ഛ്"+"e">"ഛെ" c - chhe  
+"ഛെ"+"e">"ഛീ" c - chhee  
+"ഛെ"+"i">"ഛൈ" c - chhei  
+"ഛ്"+"E">"ഛേ" c - chhE  
+"ഛ്"+"i">"ഛി" c - chhi  
+"ഛി"+"i">"ഛീ" c - chhii  
+"ഛ്"+"I">"ഛീ" c - chhI  
+"ഛ്"+"o">"ഛൊ" c - chho  
+"ഛൊ"+"o">"ഛൂ" c - chhoo  
+"ഛൊ"+"u">"ഛൌ" c - chhou  
+"ഛ്"+"O">"ഛോ" c - chhO  
+"ഛ്"+"R">"ഛൃ" c - chhR  
+"ഛ്"+"u">"ഛു" c - chhu  
+"ഛു"+"u">"ഛൂ" c - chhuu  
+"ഛ്"+"U">"ഛൂ" c - chhU  
+"ച്"+"i">"ചി" c - chi  
+"ചി"+"i">"ചീ" c - chii  
+"ച്"+"I">"ചീ" c - chI  
+"ച്"+"o">"ചൊ" c - cho  
+"ചൊ"+"o">"ചൂ" c - choo  
+"ചൊ"+"u">"ചൌ" c - chou  
+"ച്"+"O">"ചോ" c - chO  
+"ച്"+"R">"ചൃ" c - chR  
+"ച്"+"u">"ചു" c - chu  
+"ചു"+"u">"ചൂ" c - chuu  
+"ച്"+"U">"ചൂ" c - chU  
+"ക്"+"i">"കി" c - ci  
+"ക്"+"I">"കീ" c - cI  
+"ക്"+"k">"ക്ക്" c - ck  
+"ക്"+"o">"കൊ" c - co  
+"കൊ"+"o">"കൂ" c - coo  
+"കൊ"+"u">"കൌ" c - cou  
+"ക്"+"O">"കോ" c - cO  
+"ക്"+"R">"കൃ" c - cR  
+"ക്"+"u">"കു" c - cu  
+"കു"+"u">"കൂ" c - cuu  
+"ക്"+"U">"കൂ" c - cU  
++"C">"സി" c - C  
+"സി"+"h">"ഛ്" c - Ch  
+c duplication "ഛ്"+"^">"ഛ്" c - Ch^  
+c duplication "ഛ്"+"a">"ഛ" c - Cha  
+c duplication "ഛ"+"a">"ഛാ" c - Chaa  
+c duplication "ഛ"+"e">"ഛേ" c - Chae  
+c duplication "ഛ"+"H">"ഛഃ" c - ChaH  
+c duplication "ഛ"+"i">"ഛൈ" c - Chai  
+c duplication "ഛ"+"M">"ഛം" c - ChaM  
+c duplication "ഛ"+"u">"ഛൗ" c - Chau  
+c duplication "ഛ്"+"A">"ഛാ" c - ChA  
+c duplication "ഛ്"+"e">"ഛെ" c - Che  
+c duplication "ഛെ"+"e">"ഛീ" c - Chee  
+c duplication "ഛെ"+"i">"ഛൈ" c - Chei  
+c duplication "ഛ്"+"E">"ഛേ" c - ChE  
+c duplication "ഛ്"+"i">"ഛി" c - Chi  
+c duplication "ഛി"+"i">"ഛീ" c - Chii  
+c duplication "ഛ്"+"I">"ഛീ" c - ChI  
+c duplication "ഛ്"+"o">"ഛൊ" c - Cho  
+c duplication "ഛൊ"+"o">"ഛൂ" c - Choo  
+c duplication "ഛൊ"+"u">"ഛൌ" c - Chou  
+c duplication "ഛ്"+"O">"ഛോ" c - ChO  
+c duplication "ഛ്"+"R">"ഛൃ" c - ChR  
+c duplication "ഛ്"+"u">"ഛു" c - Chu  
+c duplication "ഛു"+"u">"ഛൂ" c - Chuu  
+c duplication "ഛ്"+"U">"ഛൂ" c - ChU  
++"d">"ദ്" c - d  
+"ദ്"+"^">"ദ്" c - d^  
+"ദ്"+"a">"ദ" c - da  
+"ദ"+"a">"ദാ" c - daa  
+"ദ"+"e">"ദേ" c - dae  
+"ദ"+"H">"ദഃ" c - daH  
+"ദ"+"i">"ദൈ" c - dai  
+"ദ"+"M">"ദം" c - daM  
+"ദ"+"u">"ദൗ" c - dau  
+"ദ്"+"A">"ദാ" c - dA  
+"ദ്"+"e">"ദെ" c - de  
+"ദെ"+"e">"ദീ" c - dee  
+"ദെ"+"i">"ദൈ" c - dei  
+"ദ്"+"E">"ദേ" c - dE  
+"ദ്"+"h">"ധ്" c - dh  
+"ധ്"+"^">"ധ്" c - dh^  
+"ധ്"+"a">"ധ" c - dha  
+"ധ"+"a">"ധാ" c - dhaa  
+"ധ"+"e">"ധേ" c - dhae  
+"ധ"+"H">"ധഃ" c - dhaH  
+"ധ"+"i">"ധൈ" c - dhai  
+"ധ"+"M">"ധം" c - dhaM  
+"ധ"+"u">"ധൗ" c - dhau  
+"ധ്"+"A">"ധാ" c - dhA  
+"ധ്"+"e">"ധെ" c - dhe  
+"ധെ"+"e">"ധീ" c - dhee  
+"ധെ"+"i">"ധൈ" c - dhei  
+"ധ്"+"E">"ധേ" c - dhE  
+"ധ്"+"i">"ധി" c - dhi  
+"ധി"+"i">"ധീ" c - dhii  
+"ധ്"+"I">"ധീ" c - dhI  
+"ധ്"+"o">"ധൊ" c - dho  
+"ധൊ"+"o">"ധൂ" c - dhoo  
+"ധൊ"+"u">"ധൌ" c - dhou  
+"ധ്"+"O">"ധോ" c - dhO  
+"ധ്"+"R">"ധൃ" c - dhR  
+"ധ്"+"u">"ധു" c - dhu  
+"ധു"+"u">"ധൂ" c - dhuu  
+"ധ്"+"U">"ധൂ" c - dhU  
+"ദ്"+"i">"ദി" c - di  
+"ദി"+"i">"ദീ" c - dii  
+"ദ്"+"I">"ദീ" c - dI  
+"ദ്"+"o">"ദൊ" c - do  
+"ദൊ"+"o">"ദൂ" c - doo  
+"ദൊ"+"u">"ദൌ" c - dou  
+"ദ്"+"O">"ദോ" c - dO  
+"ദ്"+"R">"ദൃ" c - dR  
+"ദ്"+"u">"ദു" c - du  
+"ദു"+"u">"ദൂ" c - duu  
+"ദ്"+"U">"ദൂ" c - dU  
++"D">"ഡ്" c - D  
+"ഡ്"+"^">"ഡ്" c - D^  
+"ഡ്"+"a">"ഡ" c - Da  
+"ഡ"+"a">"ഡാ" c - Daa  
+"ഡ"+"e">"ഡേ" c - Dae  
+"ഡ"+"H">"ഡഃ" c - DaH  
+"ഡ"+"i">"ഡൈ" c - Dai  
+"ഡ"+"M">"ഡം" c - DaM  
+"ഡ"+"u">"ഡൗ" c - Dau  
+"ഡ്"+"A">"ഡാ" c - DA  
+"ഡ്"+"e">"ഡെ" c - De  
+"ഡെ"+"e">"ഡീ" c - Dee  
+"ഡെ"+"i">"ഡൈ" c - Dei  
+"ഡ്"+"E">"ഡേ" c - DE  
+"ഡ്"+"h">"ഢ്" c - Dh  
+"ഢ്"+"^">"ഢ്" c - Dh^  
+"ഢ്"+"a">"ഢ" c - Dha  
+"ഢ"+"a">"ഢാ" c - Dhaa  
+"ഢ"+"e">"ഢേ" c - Dhae  
+"ഢ"+"H">"ഢഃ" c - DhaH  
+"ഢ"+"i">"ഢൈ" c - Dhai  
+"ഢ"+"M">"ഢം" c - DhaM  
+"ഢ"+"u">"ഢൗ" c - Dhau  
+"ഢ്"+"A">"ഢാ" c - DhA  
+"ഢ്"+"e">"ഢെ" c - Dhe  
+"ഢെ"+"e">"ഢീ" c - Dhee  
+"ഢെ"+"i">"ഢൈ" c - Dhei  
+"ഢ്"+"E">"ഢേ" c - DhE  
+"ഢ്"+"i">"ഢി" c - Dhi  
+"ഢി"+"i">"ഢീ" c - Dhii  
+"ഢ്"+"I">"ഢീ" c - DhI  
+"ഢ്"+"o">"ഢൊ" c - Dho  
+"ഢൊ"+"o">"ഢൂ" c - Dhoo  
+"ഢൊ"+"u">"ഢൌ" c - Dhou  
+"ഢ്"+"O">"ഢോ" c - DhO  
+"ഢ്"+"R">"ഢൃ" c - DhR  
+"ഢ്"+"u">"ഢു" c - Dhu  
+"ഢു"+"u">"ഢൂ" c - Dhuu  
+"ഢ്"+"U">"ഢൂ" c - DhU  
+"ഡ്"+"i">"ഡി" c - Di  
+"ഡി"+"i">"ഡീ" c - Dii  
+"ഡ്"+"I">"ഡീ" c - DI  
+"ഡ്"+"o">"ഡൊ" c - Do  
+"ഡൊ"+"o">"ഡൂ" c - Doo  
+"ഡൊ"+"u">"ഡൌ" c - Dou  
+"ഡ്"+"O">"ഡോ" c - DO  
+"ഡ്"+"R">"ഡൃ" c - DR  
+"ഡ്"+"u">"ഡു" c - Du  
+"ഡു"+"u">"ഡൂ" c - Duu  
+"ഡ്"+"U">"ഡൂ" c - DU  
++"e">"എ" c - e  
+"എ"+"e">"ഈ" c - ee  
+"ഈ"+"2">"ൟ" c - ee2  
+"എ"+"i">"ഐ" c - ei  
++"E">"ഏ" c - E  
++"f">"ഫ്" c - f  
+"ഫ്"+"^">"ഫ്" c - f^  
+"ഫ്"+"a">"ഫ" c - fa  
+"ഫ"+"a">"ഫാ" c - faa  
+"ഫ"+"H">"ഫഃ" c - faH  
+"ഫ"+"i">"ഫൈ" c - fai  
+"ഫ"+"M">"ഫം" c - faM  
+"ഫ"+"u">"ഫൗ" c - fau  
+"ഫ്"+"A">"ഫാ" c - fA  
+"ഫ്"+"e">"ഫെ" c - fe  
+"ഫെ"+"e">"ഫീ" c - fee  
+"ഫെ"+"i">"ഫൈ" c - fei  
+"ഫ്"+"E">"ഫേ" c - fE  
+"ഫ്"+"i">"ഫി" c - fi  
+"ഫി"+"i">"ഫീ" c - fii  
+"ഫ്"+"I">"ഫീ" c - fI  
+"ഫ്"+"o">"ഫൊ" c - fo  
+"ഫൊ"+"o">"ഫൂ" c - foo  
+"ഫൊ"+"u">"ഫൌ" c - fou  
+"ഫ്"+"O">"ഫോ" c - fO  
+"ഫ്"+"R">"ഫൃ" c - fR  
+"ഫ്"+"u">"ഫു" c - fu  
+"ഫു"+"u">"ഫൂ" c - fuu  
+"ഫ്"+"U">"ഫൂ" c - fU  
++"F">"ഫ്" c - F  
+c duplication "ഫ്"+"^">"ഫ്" c - F^  
+c duplication "ഫ്"+"a">"ഫ" c - Fa  
+c duplication "ഫ"+"a">"ഫാ" c - Faa  
+c duplication "ഫ"+"H">"ഫഃ" c - FaH  
+c duplication "ഫ"+"i">"ഫൈ" c - Fai  
+c duplication "ഫ"+"M">"ഫം" c - FaM  
+c duplication "ഫ"+"u">"ഫൗ" c - Fau  
+c duplication "ഫ്"+"A">"ഫാ" c - FA  
+c duplication "ഫ്"+"e">"ഫെ" c - Fe  
+c duplication "ഫെ"+"e">"ഫീ" c - Fee  
+c duplication "ഫെ"+"i">"ഫൈ" c - Fei  
+c duplication "ഫ്"+"E">"ഫേ" c - FE  
+c duplication "ഫ്"+"i">"ഫി" c - Fi  
+c duplication "ഫി"+"i">"ഫീ" c - Fii  
+c duplication "ഫ്"+"I">"ഫീ" c - FI  
+c duplication "ഫ്"+"o">"ഫൊ" c - Fo  
+c duplication "ഫൊ"+"o">"ഫൂ" c - Foo  
+c duplication "ഫൊ"+"u">"ഫൌ" c - Fou  
+c duplication "ഫ്"+"O">"ഫോ" c - FO  
+c duplication "ഫ്"+"R">"ഫൃ" c - FR  
+c duplication "ഫ്"+"u">"ഫു" c - Fu  
+c duplication "ഫു"+"u">"ഫൂ" c - Fuu  
+c duplication "ഫ്"+"U">"ഫൂ" c - FU  
++"g">"ഗ്" c - g  
+"ഗ്"+"^">"ഗ്" c - g^  
+"ഗ്"+"a">"ഗ" c - ga  
+"ഗ"+"a">"ഗാ" c - gaa  
+"ഗ"+"e">"ഗേ" c - gae  
+"ഗ"+"H">"ഗഃ" c - gaH  
+"ഗ"+"i">"ഗൈ" c - gai  
+"ഗ"+"M">"ഗം" c - gaM  
+"ഗ"+"u">"ഗൗ" c - gau  
+"ഗ്"+"A">"ഗാ" c - gA  
+"ഗ്"+"e">"ഗെ" c - ge  
+"ഗെ"+"e">"ഗീ" c - gee  
+"ഗെ"+"i">"ഗൈ" c - gei  
+"ഗ്"+"E">"ഗേ" c - gE  
+"ഗ്"+"h">"ഘ്" c - gh  
+"ഘ്"+"^">"ഘ്" c - gh^  
+"ഘ്"+"a">"ഘ" c - gha  
+"ഘ"+"a">"ഘാ" c - ghaa  
+"ഘ"+"e">"ഘേ" c - ghae  
+"ഘ"+"H">"ഘഃ" c - ghaH  
+"ഘ"+"i">"ഘൈ" c - ghai  
+"ഘ"+"M">"ഘം" c - ghaM  
+"ഘ"+"u">"ഘൗ" c - ghau  
+"ഘ്"+"A">"ഘാ" c - ghA  
+"ഘ്"+"e">"ഘെ" c - ghe  
+"ഘെ"+"e">"ഘീ" c - ghee  
+"ഘെ"+"i">"ഘൈ" c - ghei  
+"ഘ്"+"E">"ഘേ" c - ghE  
+"ഘ്"+"i">"ഘി" c - ghi  
+"ഘി"+"i">"ഘീ" c - ghii  
+"ഘ്"+"I">"ഘീ" c - ghI  
+"ഘ്"+"o">"ഘൊ" c - gho  
+"ഘൊ"+"o">"ഘൂ" c - ghoo  
+"ഘൊ"+"u">"ഘൌ" c - ghou  
+"ഘ്"+"O">"ഘോ" c - ghO  
+"ഘ്"+"R">"ഘൃ" c - ghR  
+"ഘ്"+"u">"ഘു" c - ghu  
+"ഘു"+"u">"ഘൂ" c - ghuu  
+"ഘ്"+"U">"ഘൂ" c - ghU  
+"ഗ്"+"i">"ഗി" c - gi  
+"ഗി"+"i">"ഗീ" c - gii  
+"ഗ്"+"I">"ഗീ" c - gI  
+"ഗ്"+"o">"ഗൊ" c - go  
+"ഗൊ"+"o">"ഗൂ" c - goo  
+"ഗൊ"+"u">"ഗൌ" c - gou  
+"ഗ്"+"O">"ഗോ" c - gO  
+"ഗ്"+"R">"ഗൃ" c - gR  
+"ഗ്"+"u">"ഗു" c - gu  
+"ഗു"+"u">"ഗൂ" c - guu  
+"ഗ്"+"U">"ഗൂ" c - gU  
++"G">"ഘ്" c - G  
+c duplication "ഘ്"+"^">"ഘ്" c - G^  
+c duplication "ഘ്"+"a">"ഘ" c - Ga  
+c duplication "ഘ"+"a">"ഘാ" c - Gaa  
+c duplication "ഘ"+"e">"ഘേ" c - Gae  
+c duplication "ഘ"+"H">"ഘഃ" c - GaH  
+c duplication "ഘ"+"i">"ഘൈ" c - Gai  
+c duplication "ഘ"+"M">"ഘം" c - GaM  
+c duplication "ഘ"+"u">"ഘൗ" c - Gau  
+c duplication "ഘ്"+"A">"ഘാ" c - GA  
+c duplication "ഘ്"+"e">"ഘെ" c - Ge  
+c duplication "ഘെ"+"e">"ഘീ" c - Gee  
+c duplication "ഘെ"+"i">"ഘൈ" c - Gei  
+c duplication "ഘ്"+"E">"ഘേ" c - GE  
+c duplication "ഘ്"+"i">"ഘി" c - Gi  
+c duplication "ഘി"+"i">"ഘീ" c - Gii  
+c duplication "ഘ്"+"I">"ഘീ" c - GI  
+c duplication "ഘ്"+"o">"ഘൊ" c - Go  
+c duplication "ഘൊ"+"o">"ഘൂ" c - Goo  
+c duplication "ഘൊ"+"u">"ഘൌ" c - Gou  
+c duplication "ഘ്"+"O">"ഘോ" c - GO  
+c duplication "ഘ്"+"R">"ഘൃ" c - GR  
+c duplication "ഘ്"+"u">"ഘു" c - Gu  
+c duplication "ഘു"+"u">"ഘൂ" c - Guu  
+c duplication "ഘ്"+"U">"ഘൂ" c - GU  
++"h">"ഹ്" c - h  
+"ഹ്"+"^">"ഹ്" c - h^  
+"ഹ്"+"a">"ഹ" c - ha  
+"ഹ"+"a">"ഹാ" c - haa  
+"ഹ"+"e">"ഹേ" c - haH  
+"ഹ"+"H">"ഹഃ" c - hai  
+"ഹ"+"i">"ഹൈ" c - haM  
+"ഹ"+"M">"ഹം" c - hau  
+"ഹ്"+"A">"ഹാ" c - hA  
+"ഹ്"+"e">"ഹെ" c - he  
+"ഹെ"+"e">"ഹീ" c - hee  
+"ഹെ"+"i">"ഹൈ" c - hei  
+"ഹ്"+"E">"ഹേ" c - hE  
+"ഹ്"+"i">"ഹി" c - hi  
+"ഹി"+"i">"ഹീ" c - hii  
+"ഹ്"+"I">"ഹീ" c - hI  
+"ഹ്"+"o">"ഹൊ" c - ho  
+"ഹൊ"+"o">"ഹൂ" c - hoo  
+"ഹൊ"+"u">"ഹൌ" c - hou  
+"ഹ്"+"O">"ഹോ" c - hO  
+"ഹ്"+"R">"ഹൃ" c - hR  
+"ഹ്"+"u">"ഹു" c - hu  
+"ഹു"+"u">"ഹൂ" c - huu  
+"ഹ്"+"U">"ഹൂ" c - hU  
++"H">"എച്ച്" c - H  
++"i">"ഇ" c - i  
+"ഇ"+"i">"ഈ" c - ii  
+c duplication "ഈ"+"2">"ൟ" c - ii2  
++"I">"ഈ" c - I  
++"j">"ജ്" c - j  
+"ജ്"+"^">"ജ്" c - j^  
+"ജ്"+"a">"ജ" c - ja  
+"ജ"+"a">"ജാ" c - jaa  
+"ജ"+"e">"ജേ" c - jae  
+"ജ"+"H">"ജഃ" c - jaH  
+"ജ"+"i">"ജൈ" c - jai  
+"ജ"+"M">"ജം" c - jaM  
+"ജ"+"u">"ജൗ" c - jau  
+"ജ്"+"A">"ജാ" c - jA  
+"ജ്"+"e">"ജെ" c - je  
+"ജെ"+"e">"ജീ" c - jee  
+"ജെ"+"i">"ജൈ" c - jei  
+"ജ്"+"E">"ജേ" c - jE  
+"ജ്"+"h">"ഝ്" c - jh  
+"ഝ്"+"^">"ഝ്" c - jh^  
+"ഝ്"+"a">"ഝ" c - jha  
+"ഝ"+"a">"ഝാ" c - jhaa  
+"ഝ"+"e">"ഝേ" c - jhae  
+"ഝ"+"H">"ഝഃ" c - jhaH  
+"ഝ"+"i">"ഝൈ" c - jhai  
+"ഝ"+"M">"ഝം" c - jhaM  
+"ഝ"+"u">"ഝൗ" c - jhau  
+"ഝ്"+"A">"ഝാ" c - jhA  
+"ഝ്"+"e">"ഝെ" c - jhe  
+"ഝെ"+"e">"ഝീ" c - jhee  
+"ഝെ"+"i">"ഝൈ" c - jhei  
+"ഝ്"+"E">"ഝേ" c - jhE  
+"ഝ്"+"i">"ഝി" c - jhi  
+"ഝി"+"i">"ഝീ" c - jhii  
+"ഝ്"+"I">"ഝീ" c - jhI  
+"ഝ്"+"o">"ഝൊ" c - jho  
+"ഝൊ"+"o">"ഝൂ" c - jhoo  
+"ഝൊ"+"u">"ഝൌ" c - jhou  
+"ഝ്"+"O">"ഝോ" c - jhO  
+"ഝ്"+"R">"ഝൃ" c - jhR  
+"ഝ്"+"u">"ഝു" c - jhu  
+"ഝു"+"u">"ഝൂ" c - jhuu  
+"ഝ്"+"U">"ഝൂ" c - jhU  
+"ജ്"+"i">"ജി" c - ji  
+"ജി"+"i">"ജീ" c - jii  
+"ജ്"+"I">"ജീ" c - jI  
+"ജ്"+"o">"ജൊ" c - jo  
+"ജൊ"+"o">"ജൂ" c - joo  
+"ജൊ"+"u">"ജൌ" c - jou  
+"ജ്"+"O">"ജോ" c - jO  
+"ജ്"+"R">"ജൃ" c - jR  
+"ജ്"+"u">"ജു" c - ju  
+"ജു"+"u">"ജൂ" c - juu  
+"ജ്"+"U">"ജൂ" c - jU  
++"J">"ഝ്" c - J  
+c duplication "ഝ്"+"^">"ഝ്" c - J^  
+c duplication "ഝ്"+"a">"ഝ" c - Ja  
+c duplication "ഝ"+"a">"ഝാ" c - Jaa  
+c duplication "ഝ"+"e">"ഝേ" c - Jae  
+c duplication "ഝ"+"H">"ഝഃ" c - JaH  
+c duplication "ഝ"+"i">"ഝൈ" c - Jai  
+c duplication "ഝ"+"M">"ഝം" c - JaM  
+c duplication "ഝ"+"u">"ഝൗ" c - Jau  
+c duplication "ഝ്"+"A">"ഝാ" c - JA  
+c duplication "ഝ്"+"e">"ഝെ" c - Je  
+c duplication "ഝെ"+"e">"ഝീ" c - Jee  
+c duplication "ഝെ"+"i">"ഝൈ" c - Jei  
+c duplication "ഝ്"+"E">"ഝേ" c - JE  
+c duplication "ഝ്"+"i">"ഝി" c - Ji  
+c duplication "ഝി"+"i">"ഝീ" c - Jii  
+c duplication "ഝ്"+"I">"ഝീ" c - JI  
+c duplication "ഝ്"+"o">"ഝൊ" c - Jo  
+c duplication "ഝൊ"+"o">"ഝൂ" c - Joo  
+c duplication "ഝൊ"+"u">"ഝൌ" c - Jou  
+c duplication "ഝ്"+"O">"ഝോ" c - JO  
+c duplication "ഝ്"+"R">"ഝൃ" c - JR  
+c duplication "ഝ്"+"u">"ഝു" c - Ju  
+c duplication "ഝു"+"u">"ഝൂ" c - Juu  
+c duplication "ഝ്"+"U">"ഝൂ" c - JU  
++"k">"ക്" deadkey(1) c - k  
+"ക്" deadkey(1)+"2">"കു്" c - k2  
+"ക്" deadkey(1)+"3">"ൿ" c - k3  
+"ക്" deadkey(1)+"_">"ൿ" c - k_  
+"ക്" deadkey(1)+"~">"ൿ" c - k~  //new
+"ക്" deadkey(1)+"^">"ക്" c - k^  
+"ക്" deadkey(1)+"a">"ക" c - ka  
+c duplication "ക"+"a">"കാ" c - kaa  
+c duplication "ക"+"e">"കേ" c - kae  
+"ക"+"H">"കഃ" c - kaH  
+c duplication "ക"+"i">"കൈ" c - kai  
+"ക"+"M">"കം" c - kaM  
+c duplication "ക"+"u">"കൗ" c - kau  
+"ക്" deadkey(1)+"A">"കാ" c - kA  
+"ക്" deadkey(1)+"e">"കെ" c - ke  
+c duplication "കെ"+"e">"കീ" c - kee  
+c duplication "കെ"+"i">"കൈ" c - kei  
+"ക്" deadkey(1)+"E">"കേ" c - kE  
+"ക്" deadkey(1)+"h">"ഖ്" c - kh  
+"ഖ്"+"^">"ഖ്" c - kh^  
+"ഖ്"+"a">"ഖ" c - kha  
+"ഖ"+"a">"ഖാ" c - khaa  
+"ഖ"+"e">"ഖേ" c - khae  
+"ഖ"+"H">"ഖഃ" c - khaH  
+"ഖ"+"i">"ഖൈ" c - khai  
+"ഖ"+"M">"ഖം" c - khaM  
+"ഖ"+"u">"ഖൗ" c - khau  
+"ഖ്"+"A">"ഖാ" c - khA  
+"ഖ്"+"e">"ഖെ" c - khe  
+"ഖെ"+"e">"ഖീ" c - khee  
+"ഖെ"+"i">"ഖൈ" c - khei  
+"ഖ്"+"E">"ഖേ" c - khE  
+"ഖ്"+"i">"ഖി" c - khi  
+"ഖി"+"i">"ഖീ" c - khii  
+"ഖ്"+"I">"ഖീ" c - khI  
+"ഖ്"+"o">"ഖൊ" c - kho  
+"ഖൊ"+"o">"ഖൂ" c - khoo  
+"ഖൊ"+"u">"ഖൌ" c - khou  
+"ഖ്"+"O">"ഖോ" c - khO  
+"ഖ്"+"R">"ഖൃ" c - khR  
+"ഖ്"+"u">"ഖു" c - khu  
+"ഖു"+"u">"ഖൂ" c - khuu  
+"ഖ്"+"U">"ഖൂ" c - khU  
+"ക്" deadkey(1)+"i">"കി" c - ki  
+"കി"+"i">"കീ" c - kii  
+"ക്" deadkey(1)+"I">"കീ" c - kI  
+"ക്" deadkey(1)+"o">"കൊ" c - ko  
+c duplication "കൊ"+"o">"കൂ" c - koo  
+c duplication "കൊ"+"u">"കൌ" c - kou  
+"ക്" deadkey(1)+"O">"കോ" c - kO  
+"ക്" deadkey(1)+"R">"കൃ" c - kR  
+"ക്" deadkey(1)+"u">"കു" c - ku  
+"കു" deadkey(1)+"u">"കൂ" c - kuu  
+"ക്" deadkey(1)+"U">"കൂ" c - kU  
++"K">"ഖ്" c - K  
+c duplication "ഖ്"+"^">"ഖ്" c - K^  
+c duplication "ഖ്"+"a">"ഖ" c - Ka  
+c duplication "ഖ"+"a">"ഖാ" c - Kaa  
+c duplication "ഖ"+"e">"ഖേ" c - Kae  
+c duplication "ഖ"+"H">"ഖഃ" c - KaH  
+c duplication "ഖ"+"i">"ഖൈ" c - Kai  
+c duplication "ഖ"+"M">"ഖം" c - KaM  
+c duplication "ഖ"+"u">"ഖൗ" c - Kau  
+c duplication "ഖ്"+"A">"ഖാ" c - KA  
+c duplication "ഖ്"+"e">"ഖെ" c - Ke  
+c duplication "ഖെ"+"e">"ഖീ" c - Kee  
+c duplication "ഖെ"+"i">"ഖൈ" c - Kei  
+c duplication "ഖ്"+"E">"ഖേ" c - KE  
+c duplication "ഖ്"+"i">"ഖി" c - Ki  
+c duplication "ഖി"+"i">"ഖീ" c - Kii  
+c duplication "ഖ്"+"I">"ഖീ" c - KI  
+c duplication "ഖ്"+"o">"ഖൊ" c - Ko  
+c duplication "ഖൊ"+"o">"ഖൂ" c - Koo  
+c duplication "ഖൊ"+"u">"ഖൌ" c - Kou  
+c duplication "ഖ്"+"O">"ഖോ" c - KO  
+c duplication "ഖ്"+"R">"ഖൃ" c - KR  
+c duplication "ഖ്"+"u">"ഖു" c - Ku  
+c duplication "ഖു"+"u">"ഖൂ" c - Kuu  
+c duplication "ഖ്"+"U">"ഖൂ" c - KU  
++"l">"ല്" c - l  
+"ല്"+"2">"ൽ" c - l2  
+"ല്"+"_">"ൽ" c - l_  
+"ല്"+"~">"ൽ" c - l~  //new
+"ല്"+"^">"ല്" deadkey(2) c - l^  
+"ല്" deadkey(2)+"^">"ഌ" c - l^^  
+"ഌ"+"^">"ൡ" c - l^^^  
+"ല്"+"a">"ല" c - la  
+"ല"+"a">"ലാ" c - laa  
+"ല"+"e">"ലേ" c - lae  
+"ല"+"H">"ലഃ" c - laH  
+"ല"+"i">"ലൈ" c - lai  
+"ല"+"M">"ലം" c - laM  
+"ല"+"u">"ലൗ" c - lau  
+"ല്"+"A">"ലാ" c - lA  
+"ല്"+"e">"ലെ" c - le  
+"ലെ"+"e">"ലീ" c - lee  
+"ലെ"+"i">"ലൈ" c - lei  
+"ല്"+"E">"ലേ" c - lE  
+"ല്"+"i">"ലി" c - li  
+"ലി"+"i">"ലീ" c - lii  
+"ല്"+"I">"ലീ" c - lI  
+"ല്"+"o">"ലൊ" c - lo  
+"ലൊ"+"o">"ലൂ" c - loo  
+"ലൊ"+"u">"ലൌ" c - lou  
+"ല്"+"O">"ലോ" c - lO  
+"ല്"+"R">"ലൃ" c - lR  
+"ല്"+"u">"ലു" c - lu  
+"ലു"+"u">"ലൂ" c - luu  
+"ല്"+"U">"ലൂ" c - lU  
++"L">"ള്" c - L  
+"ള്"+"2">"ൾ" c - L2  
+"ള്"+"_">"ൾ" c - L_  
+"ള്"+"~">"ൾ" c - L~  //new
+"ള്"+"^">"ള്" deadkey(7) c - L^  
+"ള്" deadkey(7)+"^">"ഌ" c - L^^  
+c duplication "ഌ"+"^">"ൡ" c - L^^^  
+"ള്"+"a">"ള" c - La  
+"ള"+"a">"ളാ" c - Laa  
+"ള"+"e">"ളേ" c - Lae  
+"ള"+"H">"ളഃ" c - LaH  
+"ള"+"i">"ളൈ" c - Lai  
+"ള"+"M">"ളം" c - LaM  
+"ള"+"u">"ളൗ" c - Lau  
+"ള്"+"A">"ളാ" c - LA  
+"ള്"+"e">"ളെ" c - Le  
+"ളെ"+"e">"ളീ" c - Lee  
+"ളെ"+"i">"ളൈ" c - Lei  
+"ള്"+"E">"ളേ" c - LE  
+"ള്"+"i">"ളി" c - Li  
+"ളി"+"i">"ളീ" c - Lii  
+"ള്"+"I">"ളീ" c - LI  
+"ള്"+"o">"ളൊ" c - Lo  
+"ളൊ"+"o">"ളൂ" c - Loo  
+"ളൊ"+"u">"ളൌ" c - Lou  
+"ള്"+"O">"ളോ" c - LO  
+"ള്"+"R">"ളൃ" c - LR  
+"ള്"+"u">"ളു" c - Lu  
+"ളു"+"u">"ളൂ" c - Luu  
+"ള്"+"U">"ളൂ" c - LU  
++"m">"മ്" c - m  
+"മ്"+"2">"ം" c - m2  
+"മ്"+" ">"ം " c - m   
+"മ്"+"_">"ം" c - m_  
+"മ്"+",">"ം," c - m,  
+"മ്"+"?">"ം?" c - m?  
+"മ്"+".">"ം." c - m.  
+"മ്"+"^">"മ്" c - m^  
+"മ്"+"~">"ം" c - m~  
+"മ്"+"a">"മ" c - ma  
+"മ"+"a">"മാ" c - maa  
+"മ"+"e">"മേ" c - mae  
+"മ"+"H">"മഃ" c - maH  
+"മ"+"i">"മൈ" c - mai  
+"മ"+"M">"മം" c - maM  
+"മ"+"u">"മൗ" c - mau  
+"മ്"+"A">"മാ" c - mA  
+"മ്"+"e">"മെ" c - me  
+"മെ"+"e">"മീ" c - mee  
+"മെ"+"i">"മെയ്" c - mei  
+"മ്"+"E">"മേ" c - mE  
+"മ്"+"i">"മി" c - mi  
+"മി"+"i">"മീ" c - mii  
+"മ്"+"I">"മീ" c - mI  
+"മ്"+"o">"മൊ" c - mo  
+"മൊ"+"o">"മൂ" c - moo  
+"മൊ"+"u">"മൌ" c - mou  
+"മ്"+"O">"മോ" c - mO  
+"മ്"+"R">"മൃ" c - mR  
+"മ്"+"u">"മു" c - mu  
+"മു"+"u">"മൂ" c - muu  
+"മ്"+"U">"മൂ" c - mU  
++"M">"മ്" deadkey(3) c - M  
+"മ്" deadkey(3)+"2">"ം" deadkey(3) c - M2  
+"മ്" deadkey(3)+"_">"ം" deadkey(3) c - M_  
+"മ്" deadkey(3)+".">"ം." deadkey(3) c - M.  
+"മ്" deadkey(3)+"^">"മ്" deadkey(3) c - M^  
+"മ്" deadkey(3)+"~">"ം" deadkey(3) c - M~  
+"മ്" deadkey(3)+"a">"മ" deadkey(3) c - Ma  
+"മ" deadkey(3)+"a">"മാ" deadkey(3) c - Maa  
+"മ" deadkey(3)+"e">"മേ" deadkey(3) c - Mae  
+"മ" deadkey(3)+"H">"മഃ" deadkey(3) c - MaH  
+"മ" deadkey(3)+"i">"മൈ" deadkey(3) c - Mai  
+"മ" deadkey(3)+"M">"മം" deadkey(3) c - MaM  
+"മ" deadkey(3)+"u">"മൗ" deadkey(3) c - Mau  
+"മ്" deadkey(3)+"A">"മാ" deadkey(3) c - MA  
+"മ്" deadkey(3)+"e">"മെ" deadkey(3) c - Me  
+"മെ" deadkey(3)+"e">"മീ" deadkey(3) c - Mee  
+"മെ" deadkey(3)+"i">"മെയ്" deadkey(3) c - Mei  
+"മ്" deadkey(3)+"E">"മേ" deadkey(3) c - ME  
+"മ്" deadkey(3)+"i">"മി" deadkey(3) c - Mi  
+"മി" deadkey(3)+"i">"മീ" deadkey(3) c - Mii  
+"മ്" deadkey(3)+"I">"മീ" deadkey(3) c - MI  
+"മ്" deadkey(3)+"o">"മൊ" deadkey(3) c - Mo  
+"മൊ" deadkey(3)+"o">"മൂ" deadkey(3) c - Moo  
+"മൊ" deadkey(3)+"u">"മൌ" deadkey(3) c - Mou  
+"മ്" deadkey(3)+"O">"മോ" deadkey(3) c - MO  
+"മ്" deadkey(3)+"R">"മൃ" deadkey(3) c - MR  
+"മ്" deadkey(3)+"u">"മു" deadkey(3) c - Mu  
+"മു" deadkey(3)+"u">"മൂ" deadkey(3) c - Muu  
+"മ്" deadkey(3)+"U">"മൂ" deadkey(3) c - MU  
++"n">"ന്" c - n  
+"ന്"+"2">"ൻ" c - n2  
+"ന്"+"_">"ൻ" c - n_  
+"ന്"+"~">"ൻ" c - n~  //new
+"ന്"+"^">"ന്" c - n^  
+"ന്"+"a">"ന" c - na  
+"ന"+"2">"ണ" c - na2  
+"ന"+"3">"ഩ" c - na3  
+"ന"+"a">"നാ" c - naa  
+"ന"+"e">"നേ" c - nae  
+"ന"+"H">"നഃ" c - naH  
+"ന"+"i">"നൈ" c - nai  
+"ന"+"M">"നം" c - naM  
+"ന"+"u">"നൗ" c - nau  
+"ന്"+"A">"നാ" c - nA  
+"ന്"+"c">"nc" c -   //new
+"nc"+"h">"ഞ്ച്" c - nch  
+"ഞ്ച്"+"^">"ഞ്ച്" c - nch^  
+"ഞ്ച്"+"a">"ഞ്ച" c - ncha  
+"ഞ്ച"+"a">"ഞ്ചാ" c - nchaa  
+"ഞ്ച"+"H">"ഞ്ചഃ" c - nchaH  
+"ഞ്ച"+"i">"ഞ്ചൈ" c - nchai  
+"ഞ്ച"+"M">"ഞ്ചം" c - nchaM  
+"ഞ്ച"+"u">"ഞ്ചൌ" c - nchau  
+"ഞ്ച്"+"A">"ഞ്ചാ" c - nchA  
+"ഞ്ച്"+"e">"ഞ്ചെ" c - nche  
+"ഞ്ചെ"+"e">"ഞ്ചീ" c - nchee  
+"ഞ്ചെ"+"i">"ഞ്ചൈ" c - nchei  
+"ഞ്ച്"+"E">"ഞ്ചേ" c - nchE  
+"ഞ്ച്"+"i">"ഞ്ചി" c - nchi  
+"ഞ്ചി"+"i">"ഞ്ചീ" c - nchii  
+"ഞ്ച്"+"I">"ഞ്ചീ" c - nchI  
+"ഞ്ച്"+"o">"ഞ്ചൊ" c - ncho  
+"ഞ്ചൊ"+"o">"ഞ്ചൂ" c - nchoo  
+"ഞ്ചൊ"+"u">"ഞ്ചൌ" c - nchou  
+"ഞ്ച്"+"O">"ഞ്ചോ" c - nchO  
+"ഞ്ച്"+"R">"ഞ്ചൃ" c - nchR  
+"ഞ്ച്"+"u">"ഞ്ചു" c - nchu  
+"ഞ്ചു"+"u">"ഞ്ചൂ" c - nchuu  
+"ഞ്ച്"+"U">"ഞ്ചൂ" c - nchU  
+"ന്"+"e">"നെ" c - ne  
+"നെ"+"e">"നീ" c - nee  
+"നെ"+"i">"നെയ്" c - nei  
+"ന്"+"E">"നേ" c - nE  
+"ന്"+"g">"ങ്ങ്" c - ng  
+"ങ്ങ്"+"^">"ങ്" c - ng^  
+"ങ്ങ്"+"a">"ങ്ങ" c - nga  
+"ങ്ങ"+"2">"ങ" c - nga2  
+"ങ്ങ"+"a">"ങ്ങാ" c - ngaa  
+"ങ്ങ"+"e">"ങ്ങേ" c - ngae  
+"ങ്ങ"+"i">"ങ്ങൈ" c - ngai  
+"ങ്ങ"+"M">"ങ്ങം" c - ngaM  
+"ങ്ങ"+"u">"ങ്ങൗ" c - ngau  
+"ങ്ങ്"+"A">"ങ്ങാ" c - ngA  
+"ങ്ങ്"+"e">"ങ്ങെ" c - nge  
+"ങ്ങെ"+"e">"ങ്ങീ" c - ngee  
+"ങ്ങെ"+"i">"ങൈ" c - ngei  
+"ങ്ങ്"+"E">"ങ്ങേ" c - ngE  
+"ങ്ങ്"+"i">"ങ്ങി" c - ngi  
+"ങ്ങി"+"i">"ങ്ങീ" c - ngii  
+"ങ്ങ്"+"I">"ങ്ങീ" c - ngI  
+"ങ്ങ്"+"o">"ങ്ങൊ" c - ngo  
+"ങ്ങൊ"+"o">"ങ്ങൂ" c - ngoo  
+"ങ്ങൊ"+"u">"ങൌ" c - ngou  
+"ങ്ങ്"+"O">"ങ്ങോ" c - ngO  
+"ങ്ങ്"+"R">"ങ്ങൃ" c - ngR  
+"ങ്ങ്"+"u">"ങ്ങു" c - ngu  
+"ങ്ങു"+"u">"ങ്ങൂ" c - nguu  
+"ങ്ങ്"+"U">"ങ്ങൂ" c - ngU  
+"ന്"+"i">"നി" c - ni  
+"നി"+"i">"നീ" c - nii  
+"ന്"+"I">"നീ" c - nI  
+"ന്"+"j">"ഞ്" c - nj  
+"ഞ്"+"^">"ഞ്" c - nj^  
+"ഞ്"+"a">"ഞ" c - nja  
+"ഞ"+"a">"ഞാ" c - njaa  
+"ഞ"+"e">"ഞേ" c - njae  
+"ഞ"+"H">"ഞഃ" c - njaH  
+"ഞ"+"i">"ഞൈ" c - njai  
+"ഞ"+"M">"ഞം" c - njaM  
+"ഞ"+"u">"ഞൗ" c - njau  
+"ഞ്"+"A">"ഞാ" c - njA  
+"ഞ്"+"e">"ഞെ" c - nje  
+"ഞെ"+"e">"ഞീ" c - njee  
+"ഞെ"+"i">"ഞ്ചൈ" c - njei  
+"ഞ്"+"E">"ഞേ" c - njE  
+"ഞ്"+"i">"ഞി" c - nji  
+"ഞി"+"i">"ഞീ" c - njii  
+"ഞ്"+"I">"ഞീ" c - njI  
+"ഞ്"+"o">"ഞൊ" c - njo  
+"ഞൊ"+"o">"ഞൂ" c - njoo  
+"ഞൊ"+"u">"ഞൌ" c - njou  
+"ഞ്"+"O">"ഞോ" c - njO  
+"ഞ്"+"R">"ഞൃ" c - njR  
+"ഞ്"+"u">"ഞു" c - nju  
+"ഞു"+"u">"ഞൂ" c - njuu  
+"ഞ്"+"U">"ഞൂ" c - njU  
+"ന്"+"k">"ങ്ക്" c - nk  
+"ങ്ക്"+"^">"ങ്ക്" c - nk^  
+"ങ്ക്"+"a">"ങ്ക" c - nka  
+"ങ്ക"+"a">"ങ്കാ" c - nkaa  
+"ങ്ക"+"H">"ങ്കഃ" c - nkaH  
+"ങ്ക"+"i">"ങ്കൈ" c - nkai  
+"ങ്ക"+"M">"ങ്കം" c - nkaM  
+"ങ്ക"+"u">"ങ്കൗ" c - nkau  
+"ങ്ക്"+"A">"ങ്കാ" c - nkA  
+"ങ്ക്"+"e">"ങ്കെ" c - nke  
+"ങ്കെ"+"e">"ങ്കീ" c - nkee  
+"ങ്കെ"+"i">"ങ്കൈ" c - nkei  
+"ങ്ക്"+"E">"ങ്കേ" c - nkE  
+"ങ്ക്"+"i">"ങ്കി" c - nki  
+"ങ്കി"+"i">"ങ്കീ" c - nkii  
+"ങ്ക്"+"I">"ങ്കീ" c - nkI  
+"ങ്ക്"+"o">"ങ്കൊ" c - nko  
+"ങ്കൊ"+"o">"ങ്കൂ" c - nkoo  
+"ങ്കൊ"+"u">"ങ്കൌ" c - nkou  
+"ങ്ക്"+"O">"ങ്കോ" c - nkO  
+"ങ്ക്"+"R">"ങ്കൃ" c - nkR  
+"ങ്ക്"+"u">"ങ്കു" c - nku  
+"ങ്കു"+"u">"ങ്കൂ" c - nkuu  
+"ങ്ക്"+"U">"ങ്കൂ" c - nkU  
+"ന്"+"o">"നൊ" c - no  
+"നൊ"+"o">"നൂ" c - noo  
+"നൊ"+"u">"നൌ" c - nou  
+"ന്"+"O">"നോ" c - nO  
+"ന്"+"R">"നൃ" c - nR  
+"ന്"+"t">"ന്റ്" c - nt  
+"ന്റ്"+"^">"ന്റ്" c - nt^  
+"ന്റ്"+"a">"ന്റ" c - nta  
+"ന്റ"+"a">"ന്റാ" c - ntaa  
+"ന്റ"+"e">"ന്റേ" c - ntae  
+"ന്റ"+"H">"ന്റഃ" c - ntaH  
+"ന്റ"+"i">"ന്റൈ" c - ntai  
+"ന്റ"+"M">"ന്റം" c - ntaM  
+"ന്റ"+"u">"ന്റൗ" c - ntau  
+"ന്റ്"+"A">"ന്റാ" c - ntA  
+"ന്റ്"+"e">"ന്റെ" c - nte  
+"ന്റെ"+"e">"ന്റീ" c - ntee  
+"ന്റെ"+"i">"ന്റൈ" c - ntei  
+"ന്റ്"+"E">"ന്റേ" c - ntE  
+"ന്റ്"+"h">"ന്ത്" c - nth  
+"ന്ത്"+"^">"ന്ത്" c - nth^  
+"ന്ത്"+"a">"ന്ത" c - ntha  
+"ന്ത"+"a">"ന്താ" c - nthaa  
+"ന്ത"+"H">"ന്തഃ" c - nthaH  
+"ന്ത"+"i">"ന്തൈ" c - nthai  
+"ന്ത"+"M">"ന്തം" c - nthaM  
+"ന്ത"+"u">"ന്തൗ" c - nthau  
+"ന്ത്"+"A">"ന്താ" c - nthA  
+"ന്ത്"+"e">"ന്തെ" c - nthe  
+"ന്തെ"+"e">"ന്തീ" c - nthee  
+"ന്തെ"+"i">"ന്തൈ" c - nthei  
+"ന്ത്"+"E">"ന്തേ" c - nthE  
+"ന്ത്"+"i">"ന്തി" c - nthi  
+"ന്തി"+"i">"ന്തീ" c - nthii  
+"ന്ത്"+"I">"ന്തീ" c - nthI  
+"ന്ത്"+"o">"ന്തൊ" c - ntho  
+"ന്തൊ"+"o">"ന്തൂ" c - nthoo  
+"ന്തൊ"+"u">"ന്തൌ" c - nthou  
+"ന്ത്"+"O">"ന്തോ" c - nthO  
+"ന്ത്"+"R">"ന്തൃ" c - nthR  
+"ന്ത്"+"u">"ന്തു" c - nthu  
+"ന്തു"+"u">"ന്തൂ" c - nthuu  
+"ന്ത്"+"U">"ന്തൂ" c - nthU  
+"ന്റ്"+"i">"ന്റി" c - nti  
+"ന്റി"+"i">"ന്റീ" c - ntii  
+"ന്റ്"+"I">"ന്റീ" c - ntI  
+"ന്റ്"+"o">"ന്റൊ" c - nto  
+"ന്റൊ"+"o">"ന്റൂ" c - ntoo  
+"ന്റൊ"+"u">"ന്റൌ" c - ntou  
+"ന്റ്"+"O">"ന്റോ" c - ntO  
+"ന്റ്"+"R">"ന്റൃ" c - ntR  
+"ന്റ്"+"u">"ന്റു" c - ntu  
+"ന്റു"+"u">"ന്റൂ" c - ntuu  
+"ന്റ്"+"U">"ന്റൂ" c - ntU  
+"ന്"+"u">"നു" c - nu  
+"നു"+"u">"നൂ" c - nuu  
+"ന്"+"U">"നൂ" c - nU  
++"N">"ണ്" c - N  
+"ണ്"+"2">"ണ്‍" c - N2  
+"ണ്"+"_">"ണ്‍" c - N_  
+"ണ്"+"~">"ണ്‍" c - N~  //new
+"ണ്"+"^">"ണ്" c - N^  
+"ണ്"+"a">"ണ" c - Na  
+"ണ"+"a">"ണാ" c - Naa  
+"ണ"+"e">"ണേ" c - Nae  
+"ണ"+"H">"ണഃ" c - NaH  
+"ണ"+"i">"ണൈ" c - Nai  
+"ണ"+"M">"ണം" c - NaM  
+"ണ"+"u">"ണൗ" c - Nau  
+"ണ്"+"A">"ണാ" c - NA  
+"ണ്"+"e">"ണെ" c - Ne  
+"ണെ"+"e">"ണീ" c - Nee  
+"ണെ"+"i">"ണൈ" c - Nei  
+"ണ്"+"E">"ണേ" c - NE  
+"ണ്"+"g">"Ng" c - Ng  //new
+"Ng"+"a">"ങ" c - Nga  
+"ങ"+"a">"ങാ" c - Ngaa  
+"ങ"+"H">"ങഃ" c - NgaH  
+"ങ"+"i">"ങൈ" c - Ngai  
+"ങ"+"u">"ങൗ" c - Ngau  
+"Ng"+"A">"ങാ" c - NgA  
+"Ng"+"e">"ങെ" c - Nge  
+"ങെ"+"e">"ങീ" c - Ngee  
+"ങെ"+"i">"ങൈ" c - Ngei  
+"Ng"+"E">"ങേ" c - NgE  
+"Ng"+"i">"ങി" c - Ngi  
+"ങി"+"i">"ങീ" c - Ngii  
+"Ng"+"o">"ങൊ" c - Ngo  
+"ങൊ"+"o">"ങൂ" c - Ngoo  
+"ങൊ"+"u">"ങൌ" c - Ngou  
+"Ng"+"O">"ങോ" c - NgO  
+"Ng"+"R">"ങൃ" c - NgR  
+"Ng"+"u">"ങു" c - Ngu  
+"ങു"+"u">"ങൂ" c - Nguu  
+"ണ്"+"i">"ണി" c - Ni  
+"ണി"+"i">"ണീ" c - Nii  
+"ണ്"+"I">"ണീ" c - NI  
+"ണ്"+"o">"ണൊ" c - No  
+"ണൊ"+"o">"ണൂ" c - Noo  
+"ണൊ"+"u">"ണൌ" c - Nou  
+"ണ്"+"O">"ണോ" c - NO  
+"ണ്"+"R">"ണൃ" c - NR  
+"ണ്"+"u">"ണു" c - Nu  
+"ണു"+"u">"ണൂ" c - Nuu  
+"ണ്"+"U">"ണൂ" c - NU  
++"o">"ഒ" c - o  
+"ഒ"+"o">"ഊ" c - oo  
+"ഒ"+"u">"ഔ" c - ou  
++"O">"ഓ" c - O  
++"p">"പ്" c - p  
+"പ്"+"^">"പ്" c - p^  
+"പ്"+"a">"പ" c - pa  
+"പ"+"a">"പാ" c - paa  
+"പ"+"e">"പേ" c - pae  
+"പ"+"H">"പഃ" c - paH  
+"പ"+"i">"പൈ" c - pai  
+"പ"+"M">"പം" c - paM  
+"പ"+"u">"പൗ" c - pau  
+"പ്"+"A">"പാ" c - pA  
+"പ്"+"e">"പെ" c - pe  
+"പെ"+"e">"പീ" c - pee  
+"പെ"+"i">"പെയ്" c - pei  
+"പ്"+"E">"പേ" c - pE  
+"പ്"+"h">"ഫ്" c - ph  
+c duplication "ഫ്"+"^">"ഫ്" c - ph^  
+c duplication "ഫ്"+"a">"ഫ" c - pha  
+c duplication "ഫ"+"a">"ഫാ" c - phaa  
+"ഫ"+"e">"ഫേ" c - phaH  
+c duplication "ഫ"+"H">"ഫഃ" c - phai  
+c duplication "ഫ"+"i">"ഫൈ" c - phaM  
+c duplication "ഫ"+"M">"ഫം" c - phau  
+c duplication "ഫ്"+"A">"ഫാ" c - phA  
+c duplication "ഫ"+"u">"ഫൗ" c - phe  
+c duplication "ഫെ"+"e">"ഫീ" c - phee  
+c duplication "ഫെ"+"i">"ഫൈ" c - phei  
+c duplication "ഫ്"+"E">"ഫേ" c - phE  
+c duplication "ഫ്"+"i">"ഫി" c - phi  
+c duplication "ഫി"+"i">"ഫീ" c - phii  
+c duplication "ഫ്"+"I">"ഫീ" c - phI  
+c duplication "ഫ്"+"o">"ഫൊ" c - pho  
+c duplication "ഫൊ"+"o">"ഫൂ" c - phoo  
+c duplication "ഫൊ"+"u">"ഫൌ" c - phou  
+c duplication "ഫ്"+"O">"ഫോ" c - phO  
+c duplication "ഫ്"+"R">"ഫൃ" c - phR  
+c duplication "ഫ്"+"u">"ഫു" c - phu  
+c duplication "ഫു"+"u">"ഫൂ" c - phuu  
+c duplication "ഫ്"+"U">"ഫൂ" c - phU  
+"പ്"+"i">"പി" c - pi  
+"പി"+"i">"പീ" c - pii  
+"പ്"+"I">"പീ" c - pI  
+"പ്"+"o">"പൊ" c - po  
+"പൊ"+"o">"പൂ" c - poo  
+"പൊ"+"u">"പൌ" c - pou  
+"പ്"+"O">"പോ" c - pO  
+"പ്"+"R">"പൃ" c - pR  
+"പ്"+"u">"പു" c - pu  
+"പു"+"u">"പൂ" c - puu  
+"പ്"+"U">"പൂ" c - pU  
++"P">"പ്" c - P  
+c duplication "പ്"+"^">"പ്" c - P^  
+c duplication "പ്"+"a">"പ" c - Pa  
+c duplication "പ"+"a">"പാ" c - Paa  
+c duplication "പ"+"e">"പേ" c - Pae  
+c duplication "പ"+"H">"പഃ" c - PaH  
+c duplication "പ"+"i">"പൈ" c - Pai  
+c duplication "പ"+"M">"പം" c - PaM  
+c duplication "പ"+"u">"പൗ" c - Pau  
+c duplication "പ്"+"A">"പാ" c - PA  
+c duplication "പ്"+"e">"പെ" c - Pe  
+c duplication "പെ"+"e">"പീ" c - Pee  
+c duplication "പെ"+"i">"പെയ്" c - Pei  
+c duplication "പ്"+"E">"പേ" c - PE  
+c duplication "പ്"+"i">"പി" c - Pi  
+c duplication "പി"+"i">"പീ" c - Pii  
+c duplication "പ്"+"I">"പീ" c - PI  
+c duplication "പ്"+"o">"പൊ" c - Po  
+c duplication "പൊ"+"o">"പൂ" c - Poo  
+c duplication "പൊ"+"u">"പൌ" c - Pou  
+c duplication "പ്"+"O">"പോ" c - PO  
+c duplication "പ്"+"R">"പൃ" c - PR  
+c duplication "പ്"+"u">"പു" c - Pu  
+c duplication "പു"+"u">"പൂ" c - Puu  
+c duplication "പ്"+"U">"പൂ" c - PU  
++"q">"ക്യു" c - q  
++"Q">"ക്യൂ" c - Q  
++"r">"ര്" c - r  
+"ര്"+"2">"ർ" c - r2  
+"ര്"+"_">"ർ" c - r_  
+"ര്"+"~">"ർ" c - r~  //new
+"ര്"+"#">"ൎ" c - r#  
+"ര്"+"^">"ഋ" c - r^  
+"ഋ"+"^">"ൠ" c - r^^  
+"ര്"+"a">"ര" c - ra  
+"ര"+"a">"രാ" c - raa  
+"ര"+"e">"രേ" c - rae  
+"ര"+"H">"രഃ" c - raH  
+"ര"+"i">"രൈ" c - rai  
+"ര"+"M">"രം" c - raM  
+"ര"+"u">"രൗ" c - rau  
+"ര്"+"A">"രാ" c - rA  
+"ര്"+"e">"രെ" c - re  
+"രെ"+"e">"രീ" c - ree  
+"രെ"+"i">"രൈ" c - rei  
+"ര്"+"E">"രേ" c - rE  
+"ര്"+"i">"രി" c - ri  
+"രി"+"i">"രീ" c - rii  
+"ര്"+"I">"രീ" c - rI  
+"ര്"+"o">"രൊ" c - ro  
+"രൊ"+"o">"രൂ" c - roo  
+"രൂ"+"2">"₹" c - roo2  
+"രൊ"+"u">"രൌ" c - rou  
+"ര്"+"O">"രോ" c - rO  
+"ര്"+"r">"ഋ" c - rr  
+"ര്"+"R">"രൃ" c - rR  
+"ര്"+"u">"രു" c - ru  
+"രു"+"u">"രൂ" c - ruu  
+c duplication "രൂ"+"2">"₹" c - ruu2  
+"ര്"+"U">"രൂ" c - rU  
++"R">"റ്" c - R  
+"റ്"+"2">"ർ" c - R2  
+"റ്"+"_">"ർ" c - R_  
+"റ്"+"~">"ർ" c - R~  //new
+"റ്"+"^">"റ്" deadkey(4) c - R^  
+"റ്" deadkey(4)+"^">"ൠ" c - R^^  
+"റ്"+"a">"റ" c - Ra  
+"റ"+"a">"റാ" c - Raa  
+"റ"+"e">"റേ" c - Rae  
+"റ"+"H">"റഃ" c - RaH  
+"റ"+"i">"റൈ" c - Rai  
+"റ"+"M">"റം" c - RaM  
+"റ"+"u">"റൗ" c - Rau  
+"റ്"+"A">"റാ" c - RA  
+"റ്"+"e">"റെ" c - Re  
+"റെ"+"e">"റീ" c - Ree  
+"റെ"+"i">"റൈ" c - Rei  
+"റ്"+"E">"റേ" c - RE  
+"റ്"+"i">"റി" c - Ri  
+"റി"+"i">"റീ" c - Rii  
+"റ്"+"I">"റീ" c - RI  
+"റ്"+"o">"റൊ" c - Ro  
+"റൊ"+"o">"റൂ" c - Roo  
+"റൊ"+"u">"റൌ" c - Rou  
+"റ്"+"O">"റോ" c - RO  
+"റ്"+"R">"ഋ" c - RR  
+"റ്"+"s">"റ്സ്" c - Rs  
+"റ്"+"u">"റു" c - Ru  
+"റു"+"u">"റൂ" c - Ruu  
+"റ്"+"U">"റൂ" c - RU  
++"s">"സ്" c - s  
+"സ്"+"^">"സ്" c - s^  
+"സ്"+"a">"സ" c - sa  
+"സ"+"a">"സാ" c - saa  
+"സ"+"e">"സേ" c - sae  
+"സ"+"H">"സഃ" c - saH  
+"സ"+"i">"സൈ" c - sai  
+"സ"+"M">"സം" c - saM  
+"സ"+"u">"സൗ" c - sau  
+"സ്"+"A">"സാ" c - sA  
+"സ്"+"e">"സെ" c - se  
+"സെ"+"e">"സീ" c - see  
+"സെ"+"i">"സൈ" c - sei  
+"സ്"+"E">"സേ" c - sE  
+"സ്"+"h">"ഷ്" c - sh  
+"ഷ്"+"^">"ഷ്" c - sh^  
+"ഷ്"+"a">"ഷ" c - sha  
+"ഷ"+"a">"ഷാ" c - shaa  
+"ഷ"+"e">"ഷേ" c - shae  
+"ഷ"+"H">"ഷഃ" c - shaH  
+"ഷ"+"i">"ഷൈ" c - shai  
+"ഷ"+"M">"ഷം" c - shaM  
+"ഷ"+"u">"ഷൗ" c - shau  
+"ഷ്"+"A">"ഷാ" c - shA  
+"ഷ്"+"e">"ഷെ" c - she  
+"ഷെ"+"e">"ഷീ" c - shee  
+"ഷെ"+"i">"ഷൈ" c - shei  
+"ഷ്"+"E">"ഷേ" c - shE  
+"ഷ്"+"i">"ഷി" c - shi  
+"ഷി"+"i">"ഷീ" c - shii  
+"ഷ്"+"I">"ഷീ" c - shI  
+"ഷ്"+"o">"ഷൊ" c - sho  
+"ഷൊ"+"o">"ഷൂ" c - shoo  
+"ഷൊ"+"u">"ഷൌ" c - shou  
+"ഷ്"+"O">"ഷോ" c - shO  
+"ഷ്"+"R">"ഷൃ" c - shR  
+"ഷ്"+"u">"ഷു" c - shu  
+"ഷു"+"u">"ഷൂ" c - shuu  
+"ഷ്"+"U">"ഷൂ" c - shU  
+"സ്"+"i">"സി" c - si  
+"സി"+"i">"സീ" c - sii  
+"സ്"+"I">"സീ" c - sI  
+"സ്"+"o">"സൊ" c - so  
+"സൊ"+"o">"സൂ" c - soo  
+"സൊ"+"u">"സൌ" c - sou  
+"സ്"+"O">"സോ" c - sO  
+"സ്"+"R">"സൃ" c - sR  
+"സ്"+"u">"സു" c - su  
+"സു"+"u">"സൂ" c - suu  
+"സ്"+"U">"സൂ" c - sU  
++"S">"ശ്" c - S  
+"ശ്"+"^">"ശ്" c - S^  
+"ശ്"+"a">"ശ" c - Sa  
+"ശ"+"a">"ശാ" c - Saa  
+"ശ"+"e">"ശേ" c - Sae  
+"ശ"+"H">"ശഃ" c - SaH  
+"ശ"+"i">"ശൈ" c - Sai  
+"ശ"+"M">"ശം" c - SaM  
+"ശ"+"u">"ശൗ" c - Sau  
+"ശ്"+"A">"ശാ" c - SA  
+"ശ്"+"e">"ശെ" c - Se  
+"ശെ"+"e">"ശീ" c - See  
+"ശെ"+"i">"ശൈ" c - Sei  
+"ശ്"+"E">"ശേ" c - SE  
+"ശ്"+"h">"ഴ്" c - Sh  
+"ഴ്"+"^">"ഴ്" c - Sh^  
+"ഴ്"+"a">"ഴ" c - Sha  
+"ഴ"+"a">"ഴാ" c - Shaa  
+"ഴ"+"e">"ഴേ" c - Shae  
+"ഴ"+"H">"ഴഃ" c - ShaH  
+"ഴ"+"i">"ഴൈ" c - Shai  
+"ഴ"+"M">"ഴം" c - ShaM  
+"ഴ"+"u">"ഴൗ" c - Shau  
+"ഴ്"+"A">"ഴാ" c - ShA  
+"ഴ്"+"e">"ഴെ" c - She  
+"ഴെ"+"e">"ഴീ" c - Shee  
+"ഴെ"+"i">"ഴൈ" c - Shei  
+"ഴ്"+"E">"ഴേ" c - ShE  
+"ഴ്"+"i">"ഴി" c - Shi  
+"ഴി"+"i">"ഴീ" c - Shii  
+"ഴ്"+"I">"ഴീ" c - ShI  
+"ഴ്"+"o">"ഴൊ" c - Sho  
+"ഴൊ"+"o">"ഴൂ" c - Shoo  
+"ഴൊ"+"u">"ഴൌ" c - Shou  
+"ഴ്"+"O">"ഴോ" c - ShO  
+"ഴ്"+"R">"ഴൃ" c - ShR  
+"ഴ്"+"u">"ഴു" c - Shu  
+"ഴു"+"u">"ഴൂ" c - Shuu  
+"ഴ്"+"U">"ഴൂ" c - ShU  
+"ശ്"+"i">"ശി" c - Si  
+"ശി"+"i">"ശീ" c - Sii  
+"ശ്"+"I">"ശീ" c - SI  
+"ശ്"+"o">"ശൊ" c - So  
+"ശൊ"+"o">"ശൂ" c - Soo  
+"ശൊ"+"u">"ശൌ" c - Sou  
+"ശ്"+"O">"ശോ" c - SO  
+"ശ്"+"R">"ശൃ" c - SR  
+"ശ്"+"u">"ശു" c - Su  
+"ശു"+"u">"ശൂ" c - Suu  
+"ശ്"+"U">"ശൂ" c - SU  
++"t">"ട്" c - t  
+"ട്"+"^">"ട്" c - t^  
+"ട്"+"a">"ട" c - ta  
+"ട"+"2">"റ്റ" c - ta2  
+"ട"+"3">"ഺ" c - ta3  
+"ട"+"a">"ടാ" c - taa  
+"ട"+"e">"ടേ" c - tae  
+"ട"+"H">"ടഃ" c - taH  
+"ട"+"i">"ടൈ" c - tai  
+"ട"+"M">"ടം" c - taM  
+"ട"+"u">"ടൗ" c - tau  
+"ട്"+"A">"ടാ" c - tA  
+"ട്"+"e">"ടെ" c - te  
+"ടെ"+"a">"ടീ" c - tea  
+"ടെ"+"e">"ടീ" c - tee  
+"ടെ"+"i">"ടൈ" c - tei  
+"ട്"+"E">"ടേ" c - tE  
+"ട്"+"h">"ത്" c - th  
+"ത്"+"^">"ത്" c - th^  
+"ത്"+"a">"ത" c - tha  
+"ത"+"a">"താ" c - thaa  
+"ത"+"e">"തേ" c - thae  
+"ത"+"H">"തഃ" c - thaH  
+"ത"+"i">"തൈ" c - thai  
+"ത"+"M">"തം" c - thaM  
+"ത"+"u">"തൗ" c - thau  
+"ത്"+"A">"താ" c - thA  
+"ത്"+"e">"തെ" c - the  
+"തെ"+"e">"തീ" c - thee  
+"തെ"+"i">"തൈ" c - thei  
+"ത്"+"E">"തേ" c - thE  
+"ത്"+"i">"തി" c - thi  
+"തി"+"i">"തീ" c - thii  
+"ത്"+"I">"തീ" c - thI  
+"ത്"+"o">"തൊ" c - tho  
+"തൊ"+"o">"തൂ" c - thoo  
+"തൊ"+"u">"തൌ" c - thou  
+"ത്"+"O">"തോ" c - thO  
+"ത്"+"R">"തൃ" c - thR  
+"ത്"+"u">"തു" c - thu  
+"തു"+"u">"തൂ" c - thuu  
+"ത്"+"U">"തൂ" c - thU  
+"ട്"+"H">"ഥ്" c - tH  
+"ഥ്"+"^">"ഥ്" c - tH^  
+"ഥ്"+"a">"ഠ" c - tHa  
+"ഠ"+"a">"ഠാ" c - tHaa  
+"ഠ"+"e">"ഠേ" c - tHae  
+"ഠ"+"H">"ഠഃ" c - tHaH  
+"ഠ"+"i">"ഠൈ" c - tHai  
+"ഠ"+"M">"ഠം" c - tHaM  
+"ഠ"+"u">"ഠൗ" c - tHau  
+"ഥ്"+"A">"ഠാ" c - tHA  
+"ഥ്"+"e">"ഠെ" c - tHe  
+"ഠെ"+"e">"ഠീ" c - tHee  
+"ഠെ"+"i">"ഠൈ" c - tHei  
+"ഥ്"+"E">"ഠേ" c - tHE  
+"ഥ്"+"i">"ഠി" c - tHi  
+"ഠി"+"i">"ഠീ" c - tHii  
+"ഥ്"+"I">"ഠീ" c - tHI  
+"ഥ്"+"o">"ഠൊ" c - tHo  
+"ഠൊ"+"o">"ഥൂ" c - tHoo  
+"ഠൊ"+"u">"ഠൌ" c - tHou  
+"ഥ്"+"O">"ഠോ" c - tHO  
+"ഥ്"+"R">"ഥൃ" c - tHR  
+"ഥ്"+"u">"ഥു" c - tHu  
+"ഥു"+"u">"ഥൂ" c - tHuu  
+"ഥ്"+"U">"ഥൂ" c - tHU  
+"ട്"+"i">"ടി" c - ti  
+"ടി"+"i">"ടീ" c - tii  
+"ട്"+"I">"ടീ" c - tI  
+"ട്"+"o">"ടൊ" c - to  
+"ടൊ"+"o">"ടൂ" c - too  
+"ടൊ"+"u">"ടൌ" c - tou  
+"ട്"+"O">"ടോ" c - tO  
+"ട്"+"R">"ടൃ" c - tR  
+"ട്"+"u">"ടു" c - tu  
+"ടു"+"u">"ടൂ" c - tuu  
+"ട്"+"U">"ടൂ" c - tU  
++"T">"ഠ്" deadkey(5) c - T  
+"ഠ്" deadkey(5)+"^">"ഠ്" deadkey(5) c - T^  
+"ഠ്" deadkey(5)+"a">"ഠ" deadkey(5) c - Ta  
+"ഠ" deadkey(5)+"a">"ഠാ" deadkey(5) c - Taa  
+"ഠ" deadkey(5)+"e">"ഠേ" deadkey(5) c - Tae  
+"ഠ" deadkey(5)+"H">"ഠഃ" deadkey(5) c - TaH  
+"ഠ" deadkey(5)+"i">"ഠൈ" deadkey(5) c - Tai  
+"ഠ" deadkey(5)+"M">"ഠം" deadkey(5) c - TaM  
+"ഠ" deadkey(5)+"u">"ഠൗ" deadkey(5) c - Tau  
+"ഠ്" deadkey(5)+"A">"ഠാ" deadkey(5) c - TA  
+"ഠ്" deadkey(5)+"e">"ഠെ" deadkey(5) c - Te  
+"ഠെ" deadkey(5)+"e">"ഠീ" deadkey(5) c - Tee  
+"ഠെ" deadkey(5)+"i">"ഠൈ" deadkey(5) c - Tei  
+"ഠ്" deadkey(5)+"E">"ഠേ" deadkey(5) c - TE  
+"ഠ്" deadkey(5)+"h">"ഥ്" deadkey(5) c - Th  
+"ഥ്" deadkey(5)+"^">"ഥ്" deadkey(5) c - Th^  
+"ഥ്" deadkey(5)+"a">"ഥ" deadkey(5) c - Tha  
+"ഥ" deadkey(5)+"a">"ഥാ" deadkey(5) c - Thaa  
+"ഥ" deadkey(5)+"e">"ഥേ" deadkey(5) c - Thae  
+"ഥ" deadkey(5)+"H">"ഥഃ" deadkey(5) c - ThaH  
+"ഥ" deadkey(5)+"i">"ഥൈ" deadkey(5) c - Thai  
+"ഥ" deadkey(5)+"M">"ഥം" deadkey(5) c - ThaM  
+"ഥ" deadkey(5)+"u">"ഥൗ" deadkey(5) c - Thau  
+"ഥ്" deadkey(5)+"A">"ഥാ" deadkey(5) c - ThA  
+"ഥ്" deadkey(5)+"e">"ഥെ" deadkey(5) c - The  
+"ഥെ" deadkey(5)+"e">"ഥീ" deadkey(5) c - Thee  
+"ഥെ" deadkey(5)+"i">"ഥൈ" deadkey(5) c - Thei  
+"ഥ്" deadkey(5)+"E">"ഥേ" deadkey(5) c - ThE  
+"ഥ്" deadkey(5)+"i">"ഥി" deadkey(5) c - Thi  
+"ഥി" deadkey(5)+"i">"ഥീ" deadkey(5) c - Thii  
+"ഥ്" deadkey(5)+"I">"ഥീ" deadkey(5) c - ThI  
+"ഥ്" deadkey(5)+"o">"ഥൊ" deadkey(5) c - Tho  
+"ഥൊ" deadkey(5)+"o">"ഥൂ" deadkey(5) c - Thoo  
+"ഥൊ" deadkey(5)+"u">"ഥൌ" deadkey(5) c - Thou  
+"ഥ്" deadkey(5)+"O">"ഥോ" deadkey(5) c - ThO  
+"ഥ്" deadkey(5)+"R">"ഥൃ" deadkey(5) c - ThR  
+"ഥ്" deadkey(5)+"u">"ഥു" deadkey(5) c - Thu  
+"ഥു" deadkey(5)+"u">"ഥൂ" deadkey(5) c - Thuu  
+"ഥ്" deadkey(5)+"U">"ഥൂ" deadkey(5) c - ThU  
+"ഠ്" deadkey(5)+"H">"ഥ്" deadkey(5) c - TH  
+c duplication "ഥ്" deadkey(5)+"^">"ഥ്" deadkey(5) c - TH^  
+c duplication "ഥ്" deadkey(5)+"a">"ഥ" deadkey(5) c - THa  
+c duplication "ഥ" deadkey(5)+"a">"ഥാ" deadkey(5) c - THaa  
+c duplication "ഥ" deadkey(5)+"e">"ഥേ" deadkey(5) c - THae  
+c duplication "ഥ" deadkey(5)+"H">"ഥഃ" deadkey(5) c - THaH  
+c duplication "ഥ" deadkey(5)+"i">"ഥൈ" deadkey(5) c - THai  
+c duplication "ഥ" deadkey(5)+"M">"ഥം" deadkey(5) c - THaM  
+c duplication "ഥ" deadkey(5)+"u">"ഥൗ" deadkey(5) c - THau  
+c duplication "ഥ്" deadkey(5)+"A">"ഥാ" deadkey(5) c - THA  
+c duplication "ഥ്" deadkey(5)+"e">"ഥെ" deadkey(5) c - THe  
+c duplication "ഥെ" deadkey(5)+"e">"ഥീ" deadkey(5) c - THee  
+c duplication "ഥെ" deadkey(5)+"i">"ഥൈ" deadkey(5) c - THei  
+c duplication "ഥ്" deadkey(5)+"E">"ഥേ" deadkey(5) c - THE  
+c duplication "ഥ്" deadkey(5)+"i">"ഥി" deadkey(5) c - THi  
+c duplication "ഥി" deadkey(5)+"i">"ഥീ" deadkey(5) c - THii  
+c duplication "ഥ്" deadkey(5)+"I">"ഥീ" deadkey(5) c - THI  
+c duplication "ഥ്" deadkey(5)+"o">"ഥൊ" deadkey(5) c - THo  
+c duplication "ഥൊ" deadkey(5)+"o">"ഥൂ" deadkey(5) c - THoo  
+c duplication "ഥൊ" deadkey(5)+"u">"ഥൌ" deadkey(5) c - THou  
+c duplication "ഥ്" deadkey(5)+"O">"ഥോ" deadkey(5) c - THO  
+c duplication "ഥ്" deadkey(5)+"R">"ഥൃ" deadkey(5) c - THR  
+c duplication "ഥ്" deadkey(5)+"u">"ഥു" deadkey(5) c - THu  
+c duplication "ഥു" deadkey(5)+"u">"ഥൂ" deadkey(5) c - THuu  
+c duplication "ഥ്" deadkey(5)+"U">"ഥൂ" deadkey(5) c - THU  
+"ഠ്" deadkey(5)+"i">"ഠി" deadkey(5) c - Ti  
+"ഠി" deadkey(5)+"i">"ഠീ" deadkey(5) c - Tii  
+"ഠ്" deadkey(5)+"I">"ഠീ" deadkey(5) c - TI  
+"ഠ്" deadkey(5)+"o">"ഠൊ" deadkey(5) c - To  
+"ഠൊ" deadkey(5)+"o">"ഠൂ" deadkey(5) c - Too  
+"ഠൊ" deadkey(5)+"u">"ഠൌ" deadkey(5) c - Tou  
+"ഠ്" deadkey(5)+"O">"ഠോ" deadkey(5) c - TO  
+"ഠ്" deadkey(5)+"R">"ഠൃ" deadkey(5) c - TR  
+"ഠ്" deadkey(5)+"T">"റ്റ്" deadkey(5) c - TT  
+"റ്റ്" deadkey(5)+"^">"റ്റ്" deadkey(5) c - TT^  
+"റ്റ്" deadkey(5)+"a">"റ്റ" deadkey(5) c - TTa  
+"റ്റ" deadkey(5)+"a">"റ്റാ" deadkey(5) c - TTaa  
+"റ്റ" deadkey(5)+"h">"റ്റഃ" deadkey(5) c - TTah  
+"റ്റ" deadkey(5)+"i">"റ്റൈ" deadkey(5) c - TTai  
+"റ്റ" deadkey(5)+"M">"റ്റം" deadkey(5) c - TTaM  
+"റ്റ" deadkey(5)+"u">"റ്റൗ" deadkey(5) c - TTau  
+"റ്റ്" deadkey(5)+"A">"റ്റാ" deadkey(5) c - TTA  
+"റ്റ്" deadkey(5)+"e">"റ്റെ" deadkey(5) c - TTe  
+"റ്റെ" deadkey(5)+"e">"റ്റീ" deadkey(5) c - TTee  
+"റ്റെ" deadkey(5)+"i">"റ്റൈ" deadkey(5) c - TTei  
+"റ്റ്" deadkey(5)+"E">"റ്റേ" deadkey(5) c - TTE  
+"റ്റ്" deadkey(5)+"i">"റ്റി" deadkey(5) c - TTi  
+"റ്റി" deadkey(5)+"i">"റ്റീ" deadkey(5) c - TTii  
+"റ്റ്" deadkey(5)+"I">"റ്റീ" deadkey(5) c - TTI  
+"റ്റ്" deadkey(5)+"o">"റ്റൊ" deadkey(5) c - TTo  
+"റ്റൊ" deadkey(5)+"o">"റ്റൂ" deadkey(5) c - TToo  
+"റ്റൊ" deadkey(5)+"u">"റ്റൌ" deadkey(5) c - TTou  
+"റ്റ്" deadkey(5)+"O">"റ്റോ" deadkey(5) c - TTO  
+"റ്റ്" deadkey(5)+"R">"റ്റൃ" deadkey(5) c - TTR  
+"റ്റ്" deadkey(5)+"u">"റ്റു" deadkey(5) c - TTu  
+"റ്റു" deadkey(5)+"u">"റ്റൂ" deadkey(5) c - TTuu  
+"റ്റ്" deadkey(5)+"U">"റ്റൂ" deadkey(5) c - TTU  
+"ഠ്" deadkey(5)+"u">"ഠു" deadkey(5) c - Tu  
+"ഠു" deadkey(5)+"u">"ഠൂ" deadkey(5) c - Tuu  
+"ഠ്" deadkey(5)+"U">"ഠൂ" deadkey(5) c - TU  
++"u">"ഉ" c - u  
+"ഉ"+"u">"ഊ" c - uu  
++"U">"ഊ" c - U  
++"v">"വ്" deadkey(8) c - v  
+"വ്" deadkey(8)+"^">"വ്" deadkey(8) c - v^  
+"വ്" deadkey(8)+"a">"വ" deadkey(8) c - va  
+"വ" deadkey(8)+"a">"വാ" deadkey(8) c - vaa  
+"വ" deadkey(8)+"e">"വേ" deadkey(8) c - vae  
+"വ" deadkey(8)+"H">"വഃ" deadkey(8) c - vaH  
+"വ" deadkey(8)+"i">"വൈ" deadkey(8) c - vai  
+"വ" deadkey(8)+"M">"വം" deadkey(8) c - vaM  
+"വ" deadkey(8)+"u">"വൗ" deadkey(8) c - vau  
+"വ്" deadkey(8)+"A">"വാ" deadkey(8) c - vA  
+"വ്" deadkey(8)+"e">"വെ" deadkey(8) c - ve  
+"വെ" deadkey(8)+"e">"വീ" deadkey(8) c - vee  
+"വെ" deadkey(8)+"i">"വൈയ്" c - vei  
+"വ്" deadkey(8)+"E">"വേ" deadkey(8) c - vE  
+"വ്" deadkey(8)+"i">"വി" deadkey(8) c - vi  
+"വി" deadkey(8)+"i">"വീ" deadkey(8) c - vii  
+"വ്" deadkey(8)+"I">"വീ" deadkey(8) c - vI  
+"വ്" deadkey(8)+"o">"വൊ" deadkey(8) c - vo  
+"വൊ" deadkey(8)+"o">"വൂ" deadkey(8) c - voo  
+"വൊ" deadkey(8)+"u">"വൌ" deadkey(8) c - vou  
+"വ്" deadkey(8)+"O">"വോ" deadkey(8) c - vO  
+"വ്" deadkey(8)+"R">"വൃ" deadkey(8) c - vR  
+"വ്" deadkey(8)+"u">"വു" deadkey(8) c - vu  
+"വു" deadkey(8)+"u">"വൂ" deadkey(8) c - vuu  
+"വ്" deadkey(8)+"U">"വൂ" c - vU  
++"V">"വി" deadkey(6) c - V  
+"വി" deadkey(6)+"a">"വ" deadkey(6) c - Va  
+"വ" deadkey(6)+"a">"വാ" c - Vaa  
+"വി" deadkey(6)+"i">"വി" deadkey(6a) c - Vi  
+"വി" deadkey(6a)+"i">"വീ" c - Vii  //new
+"വി" deadkey(6a)+"I">"വീ" c - VI  //new
++"w">"വ്" c - w  
+"വ്"+"^">"വ്" c - w^  
+"വ്"+"a">"വ" c - wa  
+"വ"+"a">"വാ" c - waa  
+"വ"+"e">"വേ" c - wae  
+"വ"+"H">"വഃ" c - waH  
+"വ"+"i">"വൈ" c - wai  
+"വ"+"M">"വം" c - waM  
+"വ"+"u">"വൗ" c - wau  
+"വ്"+"A">"വാ" c - wA  
+"വ്"+"e">"വെ" c - we  
+"വെ"+"e">"വീ" c - wee  
+"വെ"+"i">"വൈ" c - wei  
+"വ്"+"E">"വേ" c - wE  
+"വ്"+"i">"വി" c - wi  
+"വി"+"i">"വീ" c - wii  
+"വ്"+"I">"വീ" c - wI  
+"വ്"+"o">"വൊ" c - wo  
+"വൊ"+"o">"വൂ" c - woo  
+"വൊ"+"u">"വൌ" c - wou  
+"വ്"+"O">"വോ" c - wO  
+"വ്"+"R">"വൃ" c - wR  
+"വ്"+"u">"വു" c - wu  
+"വു"+"u">"വൂ" c - wuu  
+"വ്"+"U">"വൂ" c - wU  
++"W">"വ്" c - W  
+c duplication "വ്"+"^">"വ്" c - W^  
+c duplication "വ്"+"a">"വ" c - Wa  
+c duplication "വ"+"a">"വാ" c - Waa  
+c duplication "വ"+"e">"വേ" c - Wae  
+c duplication "വ"+"H">"വഃ" c - WaH  
+c duplication "വ"+"i">"വൈ" c - Wai  
+c duplication "വ"+"M">"വം" c - WaM  
+c duplication "വ"+"u">"വൗ" c - Wau  
+c duplication "വ്"+"A">"വാ" c - WA  
+c duplication "വ്"+"e">"വെ" c - We  
+c duplication "വെ"+"e">"വീ" c - Wee  
+c duplication "വെ"+"i">"വൈ" c - Wei  
+c duplication "വ്"+"E">"വേ" c - WE  
+c duplication "വ്"+"i">"വി" c - Wi  
+c duplication "വി"+"i">"വീ" c - Wii  
+c duplication "വ്"+"I">"വീ" c - WI  
+c duplication "വ്"+"o">"വൊ" c - Wo  
+c duplication "വൊ"+"o">"വൂ" c - Woo  
+c duplication "വൊ"+"u">"വൌ" c - Wou  
+c duplication "വ്"+"O">"വോ" c - WO  
+c duplication "വ്"+"R">"വൃ" c - WR  
+c duplication "വ്"+"u">"വു" c - Wu  
+c duplication "വു"+"u">"വൂ" c - Wuu  
+c duplication "വ്"+"U">"വൂ" c - WU  
++"x">"ക്ഷ്" c - x  
+"ക്ഷ്"+"^">"ക്ഷ്" c - x^  
+"ക്ഷ്"+"a">"ക്ഷ" c - xa  
+"ക്ഷ"+"a">"ക്ഷാ" c - xaa  
+"ക്ഷ"+"H">"ക്ഷഃ" c - xaH  
+"ക്ഷ"+"i">"ക്ഷൈ" c - xai  
+"ക്ഷ"+"M">"ക്ഷം" c - xaM  
+"ക്ഷ"+"u">"ക്ഷൗ" c - xau  
+"ക്ഷ്"+"A">"ക്ഷാ" c - xA  
+"ക്ഷ്"+"e">"ക്ഷെ" c - xe  
+"ക്ഷെ"+"e">"ക്ഷീ" c - xee  
+"ക്ഷെ"+"i">"ക്ഷൈ" c - xei  
+"ക്ഷ്"+"E">"ക്ഷേ" c - xE  
+"ക്ഷ്"+"i">"ക്ഷി" c - xi  
+"ക്ഷി"+"i">"ക്ഷീ" c - xii  
+"ക്ഷ്"+"I">"ക്ഷീ" c - xI  
+"ക്ഷ്"+"o">"ക്ഷൊ" c - xo  
+"ക്ഷൊ"+"o">"ക്ഷൂ" c - xoo  
+"ക്ഷൊ"+"u">"ക്ഷൌ" c - xou  
+"ക്ഷ്"+"O">"ക്ഷോ" c - xO  
+"ക്ഷ്"+"R">"ക്ഷൃ" c - xR  
+"ക്ഷ്"+"u">"ക്ഷു" c - xu  
+"ക്ഷു"+"u">"ക്ഷൂ" c - xuu  
+"ക്ഷ്"+"U">"ക്ഷൂ" c - xU  
++"X">"എക്സ്" c - X  
++"y">"യ്" c - y  
+"യ്"+"_">"ൕ" c - y_  
+"യ്"+"~">"ൕ" c - y~  //new
+"യ്"+"^">"യ്" c - y^  
+"യ്"+"a">"യ" c - ya  
+"യ"+"a">"യാ" c - yaa  
+"യ"+"e">"യേ" c - yae  
+"യ"+"H">"യഃ" c - yaH  
+"യ"+"i">"യൈ" c - yai  
+"യ"+"M">"യം" c - yaM  
+"യ"+"u">"യൗ" c - yau  
+"യ്"+"A">"യാ" c - yA  
+"യ്"+"e">"യെ" c - ye  
+"യെ"+"e">"യീ" c - yee  
+"യെ"+"i">"യൈ" c - yei  
+"യ്"+"E">"യേ" c - yE  
+"യ്"+"i">"യി" c - yi  
+"യി"+"i">"യീ" c - yii  
+"യ്"+"I">"യീ" c - yI  
+"യ്"+"o">"യൊ" c - yo  
+"യൊ"+"o">"യൂ" c - yoo  
+"യൊ"+"u">"യൌ" c - you  
+"യ്"+"O">"യോ" c - yO  
+"യ്"+"R">"യൃ" c - yR  
+"യ്"+"u">"യു" c - yu  
+"യു"+"u">"യൂ" c - yuu  
+"യ്"+"U">"യൂ" c - yU  
++"Y">"വൈ" c - Y  
+"വൈ"+"a">"യ" c - Ya  
+c duplication "യ"+"a">"യാ" c - Yaa  
+c duplication "യ"+"i">"യൈ" c - Yai  
+c duplication "യ"+"u">"യൗ" c - Yau  
+"വൈ"+"A">"യാ" c - YA  
+"വൈ"+"e">"യെ" c - Ye  
+c duplication "യെ"+"e">"യീ" c - Yee  
+c duplication "യെ"+"i">"യൈ" c - Yei  
+"വൈ"+"E">"യേ" c - YE  
+"വൈ"+"i">"യി" c - Yi  
+c duplication "യി"+"i">"യീ" c - Yii  
+"വൈ"+"I">"യീ" c - YI  
+"വൈ"+"o">"യൊ" c - Yo  
+c duplication "യൊ"+"o">"യൂ" c - Yoo  
+"വൈ"+"O">"യോ" c - YO  
+"വൈ"+"R">"യൃ" c - YR  
+"വൈ"+"u">"യു" c - Yu  
+c duplication "യു"+"u">"യൂ" c - Yuu  
+"വൈ"+"U">"യൂ" c - YU  
++"z">"ശ്" c - z  
+c duplication "ശ്"+"^">"ശ്" c - z^  
+c duplication "ശ്"+"a">"ശ" c - za  
+c duplication "ശ"+"a">"ശാ" c - zaa  
+c duplication "ശ"+"H">"ശഃ" c - zaH  
+c duplication "ശ"+"i">"ശൈ" c - zai  
+c duplication "ശ"+"M">"ശം" c - zaM  
+c duplication "ശ"+"u">"ശൗ" c - zau  
+c duplication "ശ്"+"A">"ശാ" c - zA  
+c duplication "ശ്"+"e">"ശെ" c - ze  
+c duplication "ശെ"+"e">"ശീ" c - zee  
+c duplication "ശെ"+"i">"ശൈ" c - zei  
+c duplication "ശ്"+"E">"ശേ" c - zE  
+c duplication "ശ്"+"h">"ഴ്" c - zh  
+"ഴ്"+"_">"ൖ" c - zh_  
+"ഴ്"+"~">"ൖ" c - zh~  
+c duplication "ഴ്"+"^">"ഴ്" c - zh^  
+c duplication "ഴ്"+"a">"ഴ" c - zha  
+c duplication "ഴ"+"a">"ഴാ" c - zhaa  
+c duplication "ഴ"+"e">"ഴേ" c - zhae  
+c duplication "ഴ"+"H">"ഴഃ" c - zhaH  
+c duplication "ഴ"+"i">"ഴൈ" c - zhai  
+c duplication "ഴ"+"M">"ഴം" c - zhaM  
+c duplication "ഴ"+"u">"ഴൗ" c - zhau  
+c duplication "ഴ്"+"A">"ഴാ" c - zhA  
+c duplication "ഴ്"+"e">"ഴെ" c - zhe  
+c duplication "ഴെ"+"e">"ഴീ" c - zhee  
+c duplication "ഴെ"+"i">"ഴൈ" c - zhei  
+c duplication "ഴ്"+"E">"ഴേ" c - zhE  
+c duplication "ഴ്"+"i">"ഴി" c - zhi  
+c duplication "ഴി"+"i">"ഴീ" c - zhii  
+c duplication "ഴ്"+"I">"ഴീ" c - zhI  
+c duplication "ഴ്"+"o">"ഴൊ" c - zho  
+c duplication "ഴൊ"+"o">"ഴൂ" c - zhoo  
+c duplication "ഴൊ"+"u">"ഴൌ" c - zhou  
+c duplication "ഴ്"+"O">"ഴോ" c - zhO  
+c duplication "ഴ്"+"R">"ഴൃ" c - zhR  
+c duplication "ഴ്"+"u">"ഴു" c - zhu  
+c duplication "ഴു"+"u">"ഴൂ" c - zhuu  
+c duplication "ഴ്"+"U">"ഴൂ" c - zhU  
+c duplication "ശ്"+"i">"ശി" c - zi  
+c duplication "ശി"+"i">"ശീ" c - zii  
+c duplication "ശ്"+"I">"ശീ" c - zI  
+c duplication "ശ്"+"o">"ശൊ" c - zo  
+c duplication "ശൊ"+"o">"ശൂ" c - zoo  
+c duplication "ശൊ"+"u">"ശൌ" c - zou  
+c duplication "ശ്"+"O">"ശോ" c - zO  
+c duplication "ശ്"+"R">"ശൃ" c - zR  
+c duplication "ശ്"+"u">"ശു" c - zu  
+c duplication "ശു"+"u">"ശൂ" c - zuu  
+c duplication "ശ്"+"U">"ശൂ" c - zU  
++"Z">"ശ്" c - Z  
