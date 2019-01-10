@@ -1,13 +1,13 @@
-store(&Version) "9.0"             c This keyboard is for use with Keyman 9.0
-store(&NAME) 'Malayalam Swanalekha'
+﻿store(&Version) "9.0" c This keyboard is for use with Keyman 9.0
+store(&NAME) 'Swanalekha Malayalam'
 store(&WINDOWSLANGUAGES) 'x044C'
 store(&ETHNOLOGUECODE) 'mal'
 store(&LANGUAGE) 'x044C'
-store(&TARGETS) 'windows'
-store(&COPYRIGHT) 'MIT License'
-store(&keyboardversion) "1.1.0"
-store(&BITMAP) 'Malayalam_Swanalekha_Icon_2.ico'
-store(&MESSAGE) U+0027 'Malayalam Swanalekha' U+0027 ' keyboard is based on ' U+0027 'Swanalekha' U+0027 ' Malayalam input method developed by Santhosh Thottingal.'
+store(&TARGETS) 'windows macosx linux'
+store(&COPYRIGHT) '2019 © Ramesh Kunnappully [MIT License]'
+store(&BITMAP) 'swanalekha_malayalam.ico'
+store(&keyboardversion) "1.0"
+store(&MESSAGE) U+0027 'Swanalekha Malayalam' U+0027 ' keyboard is based on ' U+0027 'Swanalekha' U+0027 ' Malayalam input method developed by Santhosh Thottingal.'
 begin Unicode > use(main)
 group(main) using keys
 +"_"> U+200C c - _  // ZWNJ
