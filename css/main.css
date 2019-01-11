@@ -26,6 +26,10 @@ a {
     text-decoration: none
 }
 
+p {
+    text-align: left;
+}
+
 strong {
     font-weight: bolder
 }
