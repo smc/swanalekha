@@ -6,8 +6,8 @@ store(&LANGUAGE) 'x044C'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '2019 © Ramesh Kunnappully [MIT License]'
 store(&BITMAP) 'swanalekha_malayalam.ico'
-store(&keyboardversion) "1.1"
-store(&MESSAGE) U+0027 'Swanalekha Malayalam' U+0027 ' keyboard is based on ' U+0027 'Swanalekha' U+0027 ' Malayalam input method developed by Santhosh Thottingal.'
+store(&keyboardversion) "1.2"
+store(&MESSAGE) 'Swanalekha Malayalam Keyboard is based on Swanalekha, a transliteration based Malayalam input method developed by Santhosh Thottingal. Visit: https://swanalekha.smc.org.in'
 begin Unicode > use(main)
 group(main) using keys
 +"_"> U+200C
@@ -559,6 +559,7 @@ group(main) using keys
 +"m">"മ്"
 "മ്"+" ">"ം "
 "മ്"+"_">"ം"
+"ം"+"2">"ൔ"
 "മ്"+",">"ം,"
 "മ്"+"?">"ം?"
 "മ്"+".">"ം."
@@ -796,10 +797,10 @@ group(main) using keys
 "നു"+"u">"നൂ"
 "ന്"+"U">"നൂ"
 +"N">"ണ്"
-"ണ്"+"_">"ണ്‍"
+"ണ്"+"_">"ൺ"
 "ണ്"+"^">"ണ്"
-"ണ്"+"~">"ണ്‍"
-"ണ്"+"2">"ണ്‍"
+"ണ്"+"~">"ൺ"
+"ണ്"+"2">"ൺ"
 "ണ്"+"a">"ണ"
 "ണ"+"a">"ണാ"
 "ണ"+"e">"ണേ"
