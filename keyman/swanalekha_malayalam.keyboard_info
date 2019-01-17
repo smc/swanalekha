@@ -1,13 +1,5 @@
 {
     "license": "mit",
-    "languages": {
-      "ml-IN": {
-        "example": {
-          "keys": "malayaaLam",
-          "text": "\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02",
-          "note": "Name of language"
-        }
-      }
-    },
-    "description": "This keyboard uses the Swanalekha layout to let you type in Malayalam. It is a phonetic keyboard, based on the normal English (QWERTY) keyboard letters. This keyboard supports Unicode 10",
+    "languages": ["ml-IN"],
+    "description": "<p><b>Swanalekha Malayalam</b> Keyboard is based on <b>Swanalekha</b>, a transliteration based Malayalam input method developed by <a href='https://thottingal.in' target='_blank'><b>Santhosh Thottingal</b></a>. For detailed information about <b>Swanalekha</b> input method, visit: <a href='https://swanalekha.smc.org.in' target='_blank'>https://swanalekha.smc.org.in</a></p>"
 }

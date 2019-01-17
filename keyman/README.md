@@ -1,15 +1,18 @@
-# Swanalekha input method based on Keyman
+Swanalekha Malayalam Keyboard
+=====================
+Copyright (C) 2019 Ramesh Kunnappully
 
-This is Swanalekha input based on Keyman. It works in Windows, Mac, Linux platforms when used with Keyman.
+Version 1.2.1
 
-This is developed by Ramesh Kunnappully.
+__DESCRIPTION:__
+**Swanalekha Malayalam** Keyboard is based on [**Swanalekha**](https://swanalekha.smc.org.in/), a transliteration based **Malayalam** input method developed by [**Santhosh Thottingal**](https://thottingal.in). For detailed information about Swanalekha input method, visit : [https://swanalekha.smc.org.in](https://swanalekha.smc.org.in/)
 
-##  Building from source
-
-Building from source require windows. In the terminal run:
-
-```
-tools\kmcomp swanalekha_malayalam.kpj
-```
-
-In the build folder you will see the package.
+Supported Platforms
+-------------------
+ * Windows
+ * macOS
+ * Linux
+ * Web
+ * Mobile Web
+ * iOS
+ * Android
