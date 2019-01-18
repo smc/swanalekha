@@ -2,13 +2,12 @@ html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font: 17px/1.4 'Open Sans','Manjari', sans-serif;
+    font: 17px/1.4 'Open Sans', 'Manjari', sans-serif;
     text-align: center
 }
 
 body {
     margin: 0;
-    background-color: antiquewhite;
 }
 
 h1 {
@@ -24,20 +23,9 @@ a {
     text-decoration: none
 }
 
-p {
-    text-align: left;
-}
-
-strong {
-    font-weight: bolder
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-a:active, a:focus, a:hover {
+a:active,
+a:focus,
+a:hover {
     text-decoration: underline
 }
 
@@ -104,7 +92,8 @@ p {
     margin-left: 0
 }
 
-.clearfix:after, .clearfix:before {
+.clearfix:after,
+.clearfix:before {
     content: ' ';
     display: table;
 }
@@ -131,7 +120,8 @@ p {
     padding: 1em 0
 }
 
-.btn, .cta-option {
+.btn,
+.cta-option {
     display: inline-block;
     position: relative
 }
@@ -152,7 +142,9 @@ p {
     border: 1px solid #333
 }
 
-.btn:active, .btn:focus, .btn:hover {
+.btn:active,
+.btn:focus,
+.btn:hover {
     text-decoration: none
 }
 
@@ -165,7 +157,9 @@ p {
     border: 1px solid #995309
 }
 
-.btn-download:active, .btn-download:focus, .btn-download:hover {
+.btn-download:active,
+.btn-download:focus,
+.btn-download:hover {
     background-color: #e0811b;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f0a100), to(#f70));
     background-image: linear-gradient(#f0a100 10%, #f70 100%)
@@ -186,7 +180,9 @@ p {
     margin-top: .25em
 }
 
-.btn-alt:active, .btn-alt:focus, .btn-alt:hover {
+.btn-alt:active,
+.btn-alt:focus,
+.btn-alt:hover {
     background-color: #555
 }
 
@@ -245,7 +241,7 @@ p {
 }
 
 .site-section {
-    background-color: ivory;
+    background:linear-gradient(135deg, #efefef 0%,#dcdcdc 100%);
     color: #333;
     overflow: hidden;
     padding: 2em 0 6em
@@ -258,7 +254,6 @@ p {
 }
 
 .site-section-dark {
-    background-color: transparent;
     text-align: center;
     padding: 2em 0 3em
 }
@@ -269,7 +264,8 @@ p {
     padding: 10px
 }
 
-.site-footer a, .site-section-dark.content a {
+.site-footer a,
+.site-section-dark.content a {
     color: #ffa000
 }
 
@@ -292,7 +288,7 @@ p {
     padding: 2em
 }
 
-.features{
+.features {
     text-align: left;
 }
 
@@ -327,18 +323,24 @@ td {
 }
 
 @media only screen and (max-width:800px) {
-    .site-logo, .site-nav {
+
+    .site-logo,
+    .site-nav {
         float: none
     }
+
     .site-nav li {
         margin: 0 .5em
     }
+
     .site-header {
         padding-top: 40px
     }
+
     .site-promo {
         padding: 3em 0
     }
+
     .site-section {
         padding: 0 1em 4em
     }
@@ -348,13 +350,17 @@ td {
     html {
         font-size: 14px
     }
-    .last-update, .site-footer {
+
+    .last-update,
+    .site-footer {
         font-size: 1em
     }
+
     .inline-block-list li {
         display: block;
         margin: 0 auto 1.5em
     }
+
     .inline-block-list li:last-child {
         margin: 0
     }
@@ -370,6 +376,7 @@ td {
     h1 {
         font-size: 2.5em
     }
+
     html {
         font-size: 13px
     }
@@ -383,28 +390,39 @@ td {
         color: #000 !important;
         text-shadow: none !important
     }
-    a, a:visited {
+
+    a,
+    a:visited {
         text-decoration: underline
     }
+
     h1 {
         padding: 1em 0 0
     }
+
     .site-promo {
         margin: 1em;
         padding: 0
     }
+
     .site-section {
         padding: 0;
         margin: 2em 1em
     }
-    .site-section-dark{
+
+    .site-section-dark {
         display: none
     }
-    h2, h3, p {
+
+    h2,
+    h3,
+    p {
         orphans: 3;
         widows: 3
     }
-    h2, h3 {
+
+    h2,
+    h3 {
         page-break-after: avoid
     }
 }
