@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /logo.png
 actionText: Get Started →
 actionLink: /guide/
 footer: A project from Swathanthra Malayalam Computing | GPL Licensed | Copyright © 2008-present Santhosh Thottingal

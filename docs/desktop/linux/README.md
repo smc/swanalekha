@@ -62,5 +62,4 @@ that using
 m17n-im-config command.You
 may need to install m17n-im-config package for this.
 
-
 ![](/img/swanalekha-config.jpg)
