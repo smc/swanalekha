@@ -1,20 +1,35 @@
 # Linux
 
-Swanalekha is available in all major GNU/Linux distributions like Ubuntu, Debian, Fedora etc. To install and configure Swanalekha, please follow the below instructions. It is assumes that you are not using
+Swanalekha is available in all major GNU/Linux distributions like Ubuntu, Debian, Fedora etc. To install and configure Swanalekha, please follow the below instructions. It is assumed that you are not using
 very old versions of these distributions.
 
-## Debian, Ubuntu and other Debian based OS
+## Installing Packages
 
-Use your package manager to search and install the following packages:
-```ibus ibus-m17n ibus-gtk3 m17n-contrib```.
+Package names of the packages required to make Swanalekha work on Linux mostly do not change across distributions. So you can use your GUI package manager such as 'Software Center' on Ubuntu to search and install the following packages:
+
+```ibus ibus-m17n m17n-db```.
 
 Alternatively, if you are comfortable
-using linux terminal, you may install them using the following
-command:
+using linux terminal, you may install them using the respective package manager of your distribution:
 
-```sudo apt install ibus ibus-m17n ibus-gtk3 m17n-contrib```
+### Debian, Ubuntu and other Debian based OS
+```sudo apt install ibus ibus-m17n m17n-db```
 
-After installing the packages, either logout and login again or run the following command
+### Archlinux, Manjaro and other Archlinux based OS
+```sudo pacman -S ibus ibus-m17n m17n-db```.
+
+### Fedora
+```sudo dnf install ibus-m17n m17n-db```.
+
+NOTE: If the package names change in the future and is not updated here it always a good idea to search for the packages through your package manager, that is ```apt search``` for Debian and Ubuntu, ```pacman -Ss``` for Archlinux and Manjaro and ```dnf search``` for Fedora. Alternatively you can use the package tracking systems of your distribution to find updated package names. Package tracking sysytems for Debian. Ubuntu, Archlinux and Fedora are given below.
+- Debian : [Debian Tracker](https://tracker.debian.org/)
+- Ubuntu : [Ubuntu Packages Search](https://packages.ubuntu.com/)
+- Archlinux: [Package Search](https://www.archlinux.org/packages/)
+- Fedora : [Fedora Packages Search](http://apps.fedoraproject.org/packages)
+
+## Setting up iBus
+
+If you're using Gnome (which is what comes default in distributions like Ubuntu and Fedora) or any GTK based desktop environment, after installing the packages, you should either logout and login again or run the following command
                             for them to be loaded:
 ```ibus restart```
 
