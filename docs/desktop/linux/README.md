@@ -21,7 +21,11 @@ using linux terminal, you may install them using the respective package manager 
 ### Fedora
 ```sudo dnf install ibus-m17n m17n-db```.
 
-NOTE: If the package names change in the future and is not updated here it always a good idea to search for the packages through your package manager, that is ```apt search``` for Debian and Ubuntu, ```pacman -Ss``` for Archlinux and Manjaro and ```dnf search``` for Fedora. Alternatively you can
+NOTE: If the package names change in the future and is not updated here it always a good idea to search for the packages through your package manager, that is ```apt search``` for Debian and Ubuntu, ```pacman -Ss``` for Archlinux and Manjaro and ```dnf search``` for Fedora. Alternatively you can use the package tracking systems of your distribution to find updated package names. Package tracking sysytems for Debian. Ubuntu, Archlinux and Fedora are given below.
+- Debian : [Debian Tracker](https://tracker.debian.org/)
+- Ubuntu : [Ubuntu Packages Search](https://packages.ubuntu.com/)
+- Archlinux: [Package Search](https://www.archlinux.org/packages/)
+- Fedora : [Fedora Packages Search](http://apps.fedoraproject.org/packages)
 
 ## Setting up iBus
 
