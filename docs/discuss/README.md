@@ -12,6 +12,7 @@
 * **How do I type Malayalam numerals?** Prefix it with @. Example: @2= ൨ @7=൭.
 * **How do I type ZWNJ?** Use underscore.
 * **How do I type underscore without switching to English** Underscore is mapped to ZWNJ. To type underscore itself, without switching keyboard, press right alt key and then type underscore. That would be Alt+shift+Hyphen.
+* **How do I type MALAYALAM VOWEL VOCALIC RR ൠ and its sign ൄ?** ൠ = R^^,  ൄ = @R^^
 
 <div id="disqus_thread">Loading discuss thread...</div>
 <script>
