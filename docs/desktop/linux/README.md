@@ -7,22 +7,36 @@ very old versions of these distributions.
 
 Package names of the packages required to make Swanalekha work on Linux mostly do not change across distributions. So you can use your GUI package manager such as 'Software Center' on Ubuntu to search and install the following packages:
 
-```ibus ibus-m17n m17n-db```.
+```bash
+ibus ibus-m17n m17n-db
+```
 
 Alternatively, if you are comfortable
 using linux terminal, you may install them using the respective package manager of your distribution:
 
 ### Debian, Ubuntu and other Debian based OS
-```sudo apt install ibus ibus-m17n m17n-db```
+
+```bash
+sudo apt install ibus ibus-m17n m17n-db
+```
 
 ### Archlinux, Manjaro and other Archlinux based OS
-```sudo pacman -S ibus ibus-m17n m17n-db```.
+
+```bash
+sudo pacman -S ibus ibus-m17n m17n-db
+```
 
 ### Fedora
-```sudo dnf install ibus-m17n m17n-db```.
+
+```bash
+sudo dnf install ibus-m17n m17n-db
+```
 
 ### openSUSE
-```sudo zypper install ibus ibus-m17n m17n-db```.
+
+```bash
+sudo zypper install ibus ibus-m17n m17n-db
+```
 
 NOTE: If the package names change in the future and is not updated here it always a good idea to search for the packages through your package manager, that is ```apt search``` for Debian and Ubuntu, ```pacman -Ss``` for Archlinux and Manjaro and ```dnf search``` for Fedora. Alternatively you can use the package tracking systems of your distribution to find updated package names. Package tracking sytems for Debian. Ubuntu, Archlinux, Fedora and openSUSE are given below.
 
@@ -77,15 +91,21 @@ Open the terminal. In Ubuntu, you can do that by Alt+F1, search Terminal.
 
 Run this command to get the new version of swanalekha:
 
-```wget http://swanalekha.smc.org.in/m17n/ml-swanalekha.mim```
+```bash
+wget http://swanalekha.smc.org.in/m17n/ml-swanalekha.mim
+```
 
 Install it using the following command
 
-```sudo cp ml-swanalekha.mim /usr/share/m17n/ml-swanalekha.mim```
+```bash
+sudo cp ml-swanalekha.mim /usr/share/m17n/ml-swanalekha.mim
+```
 
 Either logout and login or restart the input method system by the following command:
 
-```ibus-daemon -rdx```
+```bash
+ibus-daemon -rdx
+```
 
 ![](/img/update-swanalekha.jpg)
 
