@@ -24,8 +24,8 @@ using linux terminal, you may install them using the respective package manager 
 ### openSUSE
 ```sudo zypper install ibus ibus-m17n m17n-db```.
 
+NOTE: If the package names change in the future and is not updated here it always a good idea to search for the packages through your package manager, that is ```apt search``` for Debian and Ubuntu, ```pacman -Ss``` for Archlinux and Manjaro and ```dnf search``` for Fedora. Alternatively you can use the package tracking systems of your distribution to find updated package names. Package tracking sytems for Debian. Ubuntu, Archlinux, Fedora and openSUSE are given below.
 
-NOTE: If the package names change in the future and is not updated here it always a good idea to search for the packages through your package manager, that is ```apt search``` for Debian and Ubuntu, ```pacman -Ss``` for Archlinux and Manjaro and ```dnf search``` for Fedora. Alternatively you can use the package tracking systems of your distribution to find updated package names. Package tracking sysytems for Debian. Ubuntu, Archlinux and Fedora are given below.
 - Debian : [Debian Tracker](https://tracker.debian.org/)
 - Ubuntu : [Ubuntu Packages Search](https://packages.ubuntu.com/)
 - Archlinux: [Package Search](https://www.archlinux.org/packages/)
@@ -54,12 +54,14 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 if you are using KDE Plasma , after installing the packages add widget input method panel into your kde plasma panel and you should add the following lines to ```~/.config/plasma-workspace/env/ibus.sh``` file :
 
-```export GTK_IM_MODULE="ibus"```
-```export QT_IM_MODULE="ibus"```
-```export XMODIFIERS="@im=ibus"```
-```ibus-daemon -drx --panel=/usr/lib64/libexec/kimpanel-ibus-panel```
+```bash
+export GTK_IM_MODULE="ibus"
+export QT_IM_MODULE="ibus"
+export XMODIFIERS="@im=ibus"
+ibus-daemon -drx --panel=/usr/lib64/libexec/kimpanel-ibus-panel
+```
 
-once done , logout and login from plasma and right click input method widget and configure input method to add swanalekha from input method tab (search input method list for swanalekha ) . Now you can select ml-swanalekha from input method widget and use it .
+Once done, logout and login from plasma and right click input method widget and configure input method to add swanalekha from input method tab (search input method list for swanalekha). Now you can select ml-swanalekha from input method widget and use it.
 
 
 ## Disable the suggestions
