@@ -23,7 +23,7 @@ footer: A project from Swathanthra Malayalam Computing | GPL Licensed | Copyrigh
 ## Try it right now!
 
 Press <kbd>control+m</kbd>  to enable and disable swanalekha.
-<script src="/js/swanalekha-ml.js"></script>
+<script src="/js/dist/swanalekha.js"></script>
 <textarea id="tryit"></textarea>
  <script>
 window.onload = function () {

@@ -1,7 +1,10 @@
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "js:build": "cd js && npm run build",
+    "build": "npm run js:build && npm run docs:build",
+    "dev": "npm run js:build && npm run docs:dev"
   },
   "devDependencies": {
     "vuepress": "^1.8.2"
