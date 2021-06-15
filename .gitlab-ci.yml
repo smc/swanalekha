@@ -3,7 +3,7 @@ pages:
   stage: deploy
   script:
   - npm ci
-  - npm run docs:build
+  - npm run build
   - find public \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.woff*' \) -print0 | xargs -0 gzip -9 -kv
   artifacts:
     paths:
