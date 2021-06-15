@@ -2,7 +2,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "js:build": "cd js && npm run build",
+    "js:build": "cd js && npm ci && npm run build",
     "build": "npm run js:build && npm run docs:build",
     "dev": "npm run js:build && npm run docs:dev"
   },
