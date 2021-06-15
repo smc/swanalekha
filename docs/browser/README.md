@@ -70,3 +70,7 @@ Swanalekha is available as browser extension for Firefox and Chrome
 
 * <a class="btn btn-download" href="https://addons.mozilla.org/en-US/firefox/addon/swanalekha-ml/">Firefox extension</a>
 * <a class="btn btn-download" href="https://chrome.google.com/webstore/detail/%E0%B4%B8%E0%B5%8D%E0%B4%B5%E0%B4%A8%E0%B4%B2%E0%B5%87%E0%B4%96-swanalekha/najmphaghaibepbadmhjbngnkfehichf">Chrome extension</a>
+
+## NPM Package
+
+Swanalekha is available as a javascript library at NPM. See https://npmjs.com/package/swanalekha
