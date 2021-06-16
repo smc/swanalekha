@@ -73,4 +73,6 @@ Swanalekha is available as browser extension for Firefox and Chrome
 
 ## NPM Package
 
-Swanalekha is available as a javascript library at NPM. See https://npmjs.com/package/swanalekha
+Swanalekha is available as a <a href="https://npmjs.com/package/swanalekha">javascript library at NPM</a>.
+
+For a Vue based application using Swanalekha, see this <a href="https://codesandbox.io/s/swanalekha-kqyxf">example</a>.
