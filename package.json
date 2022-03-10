@@ -7,6 +7,6 @@
     "dev": "npm run js:build && npm run docs:dev"
   },
   "devDependencies": {
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.9.2"
   }
 }
